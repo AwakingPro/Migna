@@ -1,0 +1,1927 @@
+@charset "utf-8";
+#top {
+	height: 80px;
+	width: auto;
+	background-repeat: repeat;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 30px;
+	text-align: right;
+	font-size: 11px;
+	color: #FFF;
+	font-style: italic;
+	background-color: #F7F7F7;
+
+}
+.formulario_grande_intranet {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #CCC;
+	padding: 5px;
+	width: 500px;
+	border: thin solid #A0A0A0;
+}
+.formulario_grande_intranet2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #CCC;
+	padding: 5px;
+	width: 512px;
+	border: thin solid #A0A0A0;
+}
+
+.formulario_grande_intranet_editar {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #FCDCA7;
+	padding: 5px;
+	width: 500px;
+	border: thin solid #A0A0A0;
+}
+
+.formulario_grande_intranet_fijo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #999;
+	padding: 3px;
+	width: 500px;
+}
+.formulario_chico_intranet_fijo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #999;
+	padding: 3px;
+	width: 200px;
+}
+
+
+.formulario_chico_intranet {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #CCC;
+	padding: 5px;
+	width: 200px;
+	border: thin solid #A0A0A0;
+}
+.formulario_chico_intranet2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	background-color: #F00;
+	padding: 5px;
+	width: 200px;
+	border: thin solid #A0A0A0;
+}
+
+.formulario_chico_intranet_editar {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #FCDCA7;
+	padding: 5px;
+	width: 200px;
+	border: thin solid #A0A0A0;
+}
+
+
+
+#foot {
+	height: 20px;
+	width: 1000px;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	background-repeat: repeat;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-style: normal;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+}
+
+
+#emboltura {
+	height: auto;
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	border: thin solid #D5DFE5;
+}
+
+.right_1 {
+	text-align: right;
+	float: right;
+	padding-right: 20px;
+}
+
+#opcion_busqueda {
+	height: auto;
+	width: auto;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	border: thin solid #DDD;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+.tablas {
+}
+.boton_intranet {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	border-radius: 5px;
+	padding: 5px;
+	border: thin solid #A0A0A0;
+	color: #FFF;
+	background-color: #013D7B;
+}
+
+#row {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	padding-left: 10px;
+}
+#rojo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #F00;
+}
+
+#verde {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #060;
+}
+
+.bien {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #78B41E;
+	float: right;
+}
+.Nota {
+	border: thin none #E46F1F;
+	width: auto;
+	padding: 3px;
+	color: #D9381F;
+	font-size: 12px;
+	font-style: normal;
+}
+
+.Mostrar {
+	font-size: 11px;
+	text-align: right;
+	clear: right;
+	font-family: Verdana, Geneva, sans-serif;
+	text-decoration: none;
+	color: #F30;
+}
+#titulo_ticket_abierto {
+	margin-top: 5px;
+	width: auto;
+	height: 40px;
+	padding-left: 10px;
+}
+#nuevo_titulo {
+	height: 20px;
+	width: auto;
+}
+
+#left_dato {
+	float: left;
+	height: auto;
+	width: 600px;
+}
+
+#titulo_ticket_abiertos_left {
+	float: left;
+	height: 20px;
+	width: 400px;
+	font-size: 11px;
+	color: #333;
+	padding-left: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#titulo_ticket_abiertos_right {
+	float: right;
+	height: 30px;
+	width: 220px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #F00;
+	font-size: 11px;
+	text-transform: none;
+	font-style: normal;
+	text-decoration: none;
+}
+
+
+
+
+
+#siguiente {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	text-decoration: none;
+}
+
+.formulario {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	width: 600px;
+	padding: 4px;
+	border: thin solid #DDDDDD;
+	background-color: #F5F5F5;
+}
+.formulario_EDITAR {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	width: 600px;
+	padding: 3px;
+	border: thin solid #DDDDDD;
+}
+
+.formularioModif {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 600px;
+	padding: 3px;
+	border: thin solid #DDDDDD;
+	background-color: #FFF;
+}
+
+.formularioBuscar {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	width: 400px;
+	padding: 5px;
+	border: thin solid #DDDDDD;
+	background-color: #F5F5F5;
+}
+.formularioBuscareditar {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	width: 400px;
+	padding: 3px;
+	border: thin solid #DDDDDD;
+}
+
+
+.formularioOR {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 400px;
+	background-color: #EBEBEB;
+	border: thin solid #999;
+}
+.formularioEDIT {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 400px;
+	background-color: #FDD28C;
+	border: thin solid #999;
+}
+
+
+.formulariohistorial {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color: #333;
+	width: 400px;
+	background-color: #F4F4F4;
+}
+
+.formulario3 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color: #333;
+	width: 300px;
+}
+
+#divi {
+	height: 20px;
+	width: auto;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-top-color: #D6D6D6;
+	border-right-color: #D6D6D6;
+	border-bottom-color: #D6D6D6;
+	border-left-color: #D6D6D6;
+	padding-top: 5px;
+	text-decoration: none;
+}
+#divi {
+	height: 20px;
+	width: auto;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-top-color: #D6D6D6;
+	border-right-color: #D6D6D6;
+	border-bottom-color: #D6D6D6;
+	border-left-color: #D6D6D6;
+	padding-top: 5px;
+	color: #333;
+	text-decoration: none;
+}
+#divi2 {
+	height: 20px;
+	width: auto;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-top-color: #D6D6D6;
+	border-right-color: #D6D6D6;
+	border-bottom-color: #D6D6D6;
+	border-left-color: #D6D6D6;
+	padding-top: 5px;
+	color: #09C;
+}
+
+
+
+.Tablas2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000;
+	width: 918px;
+	height: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: thin none #D6D6D6;
+}
+
+.formulario_modificar {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	width: 400px;
+	background-color: #FDD28C;
+	border: thin solid #999999;
+}
+
+.formularioCopia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 400px;
+	background-color: #f4f4f4;
+}
+
+.formulariochico {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	width: 200px;
+	background-color: #F5F5F5;
+	padding: 4px;
+	border: thin solid #DDD;
+}
+.formulariochicono {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	width: 200px;
+	background-color: #000066;
+	padding: 3px;
+	border: thin solid #DDD;
+}
+
+.formulariochicoeDIT {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 200px;
+	background-color: #FFFFFF;
+	padding: 3px;
+	border: thin solid #DDD;
+}
+.formulariochicoeDIToption {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 209px;
+	background-color: #FFFFFF;
+	padding: 3px;
+	border: thin solid #DDD;
+}
+
+
+.formulariochicorojo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	width: 200px;
+	background-color: #FF0000;
+	padding: 3px;
+	border: thin solid #DDD;
+}
+
+.formulariochicoOR {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 150px;
+	background-color: #EBEBEB;
+	border: thin solid #999;
+}
+.formulariochicoEDIT {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 150px;
+	background-color: #FDD28C;
+	border: thin solid #999;
+}
+
+
+.formulariochicobutton {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000;
+	width: 150px;
+	background-color: #999;
+	border: thin outset #CCCCCC;
+}
+
+.formulariochicoselect {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 150px;
+	background-color: #CCCCCC;
+}
+#dialogo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000;
+	border: thin solid #000;
+	background-color: #0FF;
+}
+
+
+.formulariosuperchico {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 60px;
+	background-color: #FFF;
+}
+
+#fecha_inst {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color: #333;
+	width: 150px;
+}
+
+.formulariochicoCopia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 150px;
+	background-color: #f4f4f4;
+}
+.formulariochicamoficicar {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	width: 150px;
+	background-color: #FDD28C;
+	border: thin solid #999999;
+}
+
+
+
+
+#ingresado {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #F00;
+}
+
+.Menu {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+}
+.Menu10 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000;
+	text-decoration: none;
+}
+.Submenu_principal {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #013263;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	background-repeat: no-repeat;
+	text-decoration: none;
+}
+.count {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	background-color: #4F7021;
+}
+
+
+
+.Menu4 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 11px;
+	color: #C73B22;
+	text-decoration: none;
+}
+
+.Menu2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+}
+
+.MenuCopia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.Tablas {
+	width: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	padding-left: 2px;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-bottom-style: solid;
+	border-top-color: #D6D6D6;
+	border-right-color: #D6D6D6;
+	border-bottom-color: #D6D6D6;
+	border-left-color: #D6D6D6;
+	background-color: #333;
+}
+
+
+#menu {
+	height: 25px;
+	width: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	text-align: center;
+	padding-top: 8px;
+}
+#facturacion {
+	height: 250px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	margin-top: 10px;
+	padding-top: 8px;
+	padding-left: 10px;
+}
+
+.Form {
+	width: 220px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin solid #A0A0A0;
+	padding: 3px;
+	text-align: center;
+	height: 30px;
+}
+.FormCopia {
+	width: 100px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	padding: 3px;
+}
+
+
+
+#body {
+	height: auto;
+	width: auto;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+}
+#body_index {
+	height: auto;
+	width: 1024px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: 1px none #D5DFE5;
+}
+
+#body1 {
+	height: auto;
+	width: 938px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#inc_banner {
+	height: 155px;
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFFFFF;
+	border: thin none #D6D6D6;
+}
+#inc_logo {
+	height: 63px;
+	width: 61px;
+	background-image: url(../imagenes/Logo_Migna_3.0.png);
+	margin-left: 10px;
+	z-index: 100;
+}
+#inc_bienvenido {
+	float: right;
+	height: auto;
+	width: auto;
+	margin-right: 20px;
+	padding: 5px;
+	color: #666666;
+	border: thin none #C9101A;
+}
+
+#principal {
+	height: 350px;
+	width: 938px;
+	margin-top: 20px;
+}
+
+#banner {
+	height: 180px;
+	width: auto;
+	background-image: url(../imagenes/banner.png);
+	margin-top: 20px;
+}
+#banner_index {
+	height: 300px;
+	width: 400px;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	border: thin solid #013D7B;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	color: #333;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+#banner_login {
+	height: 50px;
+	width: auto;
+}
+#logo {
+	float: left;
+	height: 105px;
+	width: 320px;
+	background-image: url(../imagenes/banner_login.png);
+}
+#logo2 {
+	float: right;
+	height: 105px;
+	width: 500px;
+}
+#Menu_principal {
+	height: 20px;
+	width: 938px;
+}
+
+
+#bienvenido {
+	float: right;
+	height: 105px;
+	width: 100px;
+	text-align: left;
+}
+#bienvenido_1 {
+	height: 30px;
+	padding-top: 30px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #666;
+}
+#Menu {
+	height: 30px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #FFF;
+	width: auto;
+	position: static;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: medium;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #A0A0A0;
+	border-right-color: #D6D6D6;
+	border-bottom-color: #013D7B;
+	border-left-color: #D6D6D6;
+	background-color: #F9F9F9;
+}
+#resumen_general {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	width: auto;
+	background-repeat: repeat;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+#resumen_general_index {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #FFF;
+	width: auto;
+	background-repeat: repeat;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+#resumen_general3 {
+	height: auto;
+	margin-top: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #666;
+}
+
+#crear_clientes {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	padding-left: 20px;
+	border: thin none #D6D6D6;
+	padding-top: 10px;
+	padding-right: 20px;
+	background-image: url(../imagenes/patron_body.png);
+}
+#envolver {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	padding-left: 20px;
+	border: thin solid #D6D6D6;
+	padding-top: 15px;
+	padding-right: 20px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	width: auto;
+	margin-left: 10px;
+	margin-right: 20px;
+	padding-bottom: 15px;
+}
+#envolver2 {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	padding-left: 20px;
+	border: thin solid #D6D6D6;
+	padding-top: 15px;
+	padding-right: 20px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	width: auto;
+	margin-left: 10px;
+	margin-right: 20px;
+	padding-bottom: 15px;
+}
+
+
+#busqueda_clientes {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin solid #D6D6D6;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-right: 20px;
+	width: auto;
+	background-repeat: repeat;
+	background-color: #F9F9F9;
+	padding-bottom: 15px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#busqueda_clientes3 {
+	height: 60px;
+	margin-top: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	padding-top: 20px;
+	padding-left: 20px;
+	border: thin solid #D6D6D6;
+	background-color: #EBEBEB;
+}
+
+#crear_dato_tecnico {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	background-repeat: repeat;
+}
+#crear_dato_tecnico3 {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	background-repeat: repeat;
+}
+
+#crear_dato_tecnico2 {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	background-repeat: repeat;
+}
+
+#inventario {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	text-decoration: none;
+	background-repeat: repeat;
+	padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#inventario2 {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000;
+	border: thin none #D6D6D6;
+	text-decoration: none;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+	padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#id_retiros {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+}
+
+#id_cliente {
+	height: 300px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	text-decoration: none;
+	background-repeat: repeat;
+	width: auto;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #D6D6D6;
+	border-right-color: #D6D6D6;
+	border-bottom-color: #C9101A;
+	border-left-color: #D6D6D6;
+}
+
+#kpi {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+	width: 928px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 10px;
+}
+#kpi_front {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+	width: 928px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 10px;
+}
+#kpi_front3 {
+	height: 600px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-repeat: repeat;
+	width: auto;
+	padding-left: 10px;
+}
+
+#kpi_front2 {
+	height: 500px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+	width: 928px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 10px;
+}
+
+
+#auto {
+	height: auto;
+	margin-bottom: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	padding-right: 10px;
+}
+#auto3 {
+	height: 300px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+}
+#auto4 {
+	height: 500px;
+}
+
+
+#auto2 {
+	height: auto;
+}
+
+#auto_left {
+	float: left;
+	height: 450px;
+	width: 400px;
+}
+#auto_left3 {
+	float: left;
+	height: 300px;
+	width: 400px;
+	padding-left: 10px;
+}
+
+#auto_right {
+	float: right;
+	height: 450px;
+	width: 390px;
+	padding-right: 20px;
+}
+#auto_right3 {
+	float: right;
+	height: 300px;
+	width: 400px;
+}
+
+
+
+
+
+#inventario_bienvenida {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+	width: 928px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 10px;
+}
+#inventario_seleccione_activos {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+	width: 928px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 10px;
+}
+
+#inventario_editar_Activos {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+	width: 928px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 10px;
+}
+#ticket {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+	width: auto;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+#rp {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+	padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#rp2 {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-repeat: repeat;
+	width: auto;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+.TABLAS {
+	border: 1px solid #D5DFE5;
+}
+
+
+#rpe {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: repeat;
+	padding-left: 10px;
+}
+#rpe2 {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: repeat;
+	padding-left: 10px;
+	background-color: #F7F7F7;
+}
+
+#rpege {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin solid #D6D6D6;
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: repeat;
+	padding-left: 10px;
+	width: auto;
+}
+
+
+#rpi {
+	height: 370px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #666;
+	border: thin solid #CDCDCD;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+#rpa {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: repeat;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+
+
+#ticket_creado {
+	height: 280px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #666;
+	border: thin solid #F0F0F0;
+	background-image: url(../imagenes/ticket_creado.jpg);
+	margin-top: 10px;
+	padding-left: 40px;
+}
+#ticket_creado_buscar {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+}
+#ticket_creado_buscar1 {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	background-repeat: repeat;
+}
+
+
+#ticket_resultado {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: repeat;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#ticket_resultado3 {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	border: thin none #D6D6D6;
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: repeat;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#ticket_resultado2 {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	text-align: left;
+	background-image: url(../imagenes/patron_body.png);
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: repeat;
+	padding-left: 10px;
+}
+
+
+#ok {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #F0F0F0;
+	background-image: url(../imagenes/busqueda_cliente.jpg);
+	margin-top: 10px;
+	padding-left: 20px;
+}
+#ticket_del {
+	height: 100px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin solid #F0F0F0;
+	margin-top: 10px;
+}
+
+
+
+#ticket_nuevo {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	width: auto;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-right: 20px;
+	background-repeat: repeat;
+}
+#ticket_nuevo_info {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	margin-top: 20px;
+	padding-left: 20px;
+	padding-top: 1px;
+	padding-right: 20px;
+}
+
+#ticket_nuevo_editar {
+	height: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: thin none #D6D6D6;
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: repeat;
+	padding-left: 10px;
+}
+#history {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-color: #F30;
+	border-right-color: #F30;
+	border-bottom-color: #F30;
+	border-left-color: #F30;
+	width: 500px;
+	color: #F30;
+	font-size: 14px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bolder;
+	border-bottom-style: solid;
+	padding: 5px;
+}
+
+
+
+
+
+#inventario_ingresos_activos {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-image: url(../imagenes/patron_body.png);
+	background-repeat: repeat;
+	width: 928px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 10px;
+}
+#buscar_activos {
+	height: 400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #D6D6D6;
+	background-image: url(../imagenes/patron_body.png);
+	width: 928px;
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: repeat;
+	padding-left: 10px;
+}
+
+
+
+#inventario_left {
+	float: left;
+	width: auto;
+	height: auto;
+	margin-top: 10px;
+	border: thin solid #CDCDCD;
+	padding-left: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#inventario_right {
+	float: right;
+	width: 600px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin solid #D6D6D6;
+	margin: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#inventario_right_editar {
+	float: right;
+	width: 600px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin solid #CDCDCD;
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#inventario_right2 {
+	float: right;
+	width: 600px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	height: auto;
+	border: thin solid #CDCDCD;
+	margin-top: 10px;
+	padding-left: 20px;
+	color: #333;
+}
+
+#menu_inventario {
+	height: 18px;
+	width: auto;
+	margin-top: 10px;
+}
+
+
+
+
+#datos_com {
+	height: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: left;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	background-color: #013D7B;
+}
+
+
+
+
+#monitoreo {
+	height: 500px;
+	margin-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+}
+#registro_visitas {
+	height: 450px;
+	margin-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-image: url(../imagenes/DATA2.jpg);
+}
+#prodecimientos {
+	height: 200px;
+	margin-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+#extension {
+	height: 50px;
+	width: auto;
+}
+
+
+
+
+#bienvenido {
+	height: 30px;
+	float: right;
+	width: 715px;
+}
+#error {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #F00;
+	text-decoration: none;
+}
+#supermenu {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	background-image: url(../imagenes/tab_blue.png);
+	background-color: #013D7B;
+	height: 20px;
+}
+
+#ok {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FF9900;
+	background-color: #E2E2E2;
+}
+
+#cliente2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	width: auto;
+	float: right;
+	border-bottom-width: thin;
+	border-bottom-style: none;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+#procedimiento {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	width: 928px;
+	float: right;
+	height: auto;
+	border: thin none #D6D6D6;
+}
+
+
+.error {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color: #F00;
+}
+.error2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color: #F00;
+	text-align: right;
+	float: right;
+}
+
+
+#sesion {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #999;
+	float: right;
+	text-decoration: none;
+	width: 130px;
+	height: 22px;
+	text-align: right;
+	padding-top: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+
+#menu_left {
+	float: left;
+	height: 300px;
+	width: 620px;
+}
+#menu_right {
+	float: right;
+	height: 300px;
+	width: 300px;
+}
+#atencion {
+}
+#informe {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #06C;
+	text-align: right;
+}
+
+
+
+#menu_left_a {
+	float: left;
+	height: 300px;
+	width: 300px;
+}
+#menu_left_b {
+	float: right;
+	height: 300px;
+	width: 300px;
+}
+#menu_mis_datos {
+	background-image: url(../imagenes/fondo_menu_sub.png);
+	height: 25px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #333;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 5px;
+	border: thin solid #CCC;
+	width: auto;
+	padding-left: 8px;
+}
+
+#derechos {
+	height: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	margin-right: auto;
+	margin-left: auto;
+	width: auto;
+	text-align: right;
+	background-image: url(../imagenes/fondo_menu.png);
+	padding-top: 2px;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: 3px;
+	border-left-width: thin;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #A0A0A0;
+	border-right-color: #A0A0A0;
+	border-bottom-color: #A0A0A0;
+	border-left-color: #A0A0A0;
+	padding-right: 20px;
+	border-top-style: solid;
+}
+#acceso2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	width: auto;
+	height: 20px;
+	text-align: center;
+	padding-top: 5px;
+	background-color: #C9101A;
+	border: thin none #CCCCCC;
+}
+
+#acceso {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	width: 117px;
+	height: 125px;
+	text-align: center;
+	padding-top: 5px;
+	background-image: url(../imagenes/LOGO_MIGNA.png);
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#nombre {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	border: thin solid #CCC;
+	width: 300px;
+}
+
+#cargo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	border: thin solid #CCC;
+	width: 300px;
+}
+#horario_entrada {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	border: thin solid #CCC;
+	width: 300px;
+}
+#horario_salida {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	border: thin solid #CCC;
+	width: 300px;
+}
+#horario_salida2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	border: thin solid #CCC;
+	width: 300px;
+}
+
+
+#evento {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	border: thin solid #CCC;
+	width: 300px;
+}
+
+
+#empresa {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	border: thin solid #CCC;
+	width: 300px;
+}
+#apDiv4 {
+	position: absolute;
+	width: 270px;
+	height: 267px;
+	z-index: 1;
+	border: thin none #CCC;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #666;
+}
+#contacto_1 {
+	height: 31px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;
+	width: auto;
+	padding-left: 20px;
+	border-bottom-style: solid;
+	border-bottom-color: #D5DFE5;
+	padding-bottom: 1px;
+	border-bottom-width: 1px;
+	background-color: #F9F9F9;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	padding-top: 8px;
+}
+#contacto_2 {
+	height: 30px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	background-image: url(../imagenes/llamar.png);
+	border: thin solid #CCC;
+	padding-top: 6px;
+	padding-left: 8px;
+	margin-top: 5px;
+	background-color: #D6D6D6;
+}
+#contacto_left {
+	float: left;
+	height: 200px;
+	width: 430px;
+}
+#contacto_right {
+	float: right;
+	height: 200px;
+	width: 430px;
+}
+
+
+#contacto_3 {
+	height: 250px;
+	width: auto;
+	margin-top: 20px;
+}
+#antecedentes {
+	height: auto;
+	width: auto;
+	margin-top: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #333;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+#titulo_ticket {
+	height: 15px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #FFF;
+	background-color: #56585A;
+	text-align: center;
+}
+#footer_menu {
+	background-color: #C9101A;
+	height: 3px;
+	width: auto;
+}
+#Contenedor {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #A0A0A0;
+	border-right-color: #A0A0A0;
+	border-bottom-color: #A0A0A0;
+	border-left-color: #A0A0A0;
+	background-color: #F7F7F7;
+	border-top-width: 0px;
+}
+
+#footer_menu2 {
+	background-color: #013D7B;
+	height: 22px;
+	width: auto;
+}
+#instalaciones_todas {
+	height: auto;
+	width: 890px;
+}
+.boton_grande {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	height: 30px;
+	width: 180px;
+	border-radius: 5px 5x 5px 5px;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-width: thin;
+}
+#boton_div {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	height: 30px;
+	width: 180px;
+	background-color: #C9101A;
+	border-radius: 5px 5x 5px 5px;
+	border: thin solid #DDD;
+}
+
+.boton_grandeCopia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	height: 30px;
+	width: 180px;
+	float: right;
+	background-color: #013D7B;
+	border-radius: 5px 5x 5px 5px;
+
+}
+
+.formulario_normal {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	padding-left: 6px;
+	height: 20px;
+}
+#cont_inst {
+	height: auto;
+	width: auto;
+	margin-top: 15px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}

@@ -1,0 +1,15 @@
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) in /home/wispland/public_html/sistema/services2/config.php on line 11
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/wispland/public_html/sistema/services2/config.php on line 13
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_query(): Access denied for user 'wispland'@'localhost' (using password: NO) in /home/wispland/public_html/sistema/services2/getCountries.php on line 10
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/wispland/public_html/sistema/services2/getCountries.php on line 10
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/wispland/public_html/sistema/services2/getCountries.php on line 17
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) in /home/wispland/public_html/sistema/services2/config.php on line 11
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/wispland/public_html/sistema/services2/config.php on line 13
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_query(): Access denied for user 'wispland'@'localhost' (using password: NO) in /home/wispland/public_html/sistema/services2/getCities.php on line 11
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/wispland/public_html/sistema/services2/getCities.php on line 11
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/wispland/public_html/sistema/services2/getCities.php on line 18
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) in /home/wispland/public_html/sistema/services2/config.php on line 11
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/wispland/public_html/sistema/services2/config.php on line 13
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_query(): Access denied for user 'wispland'@'localhost' (using password: NO) in /home/wispland/public_html/sistema/services2/getZones.php on line 11
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/wispland/public_html/sistema/services2/getZones.php on line 11
+[13-Aug-2013 14:14:42 UTC] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/wispland/public_html/sistema/services2/getZones.php on line 18

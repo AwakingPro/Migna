@@ -1,0 +1,1142 @@
+@charset "utf-8";
+.EDITAR {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	background-color: #CFC;
+}
+.Sub_menu {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	text-decoration: none;
+	text-align: center;
+}
+.Sub_menuCopia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #CCC;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+#contenedor {
+	height: auto;
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #999999;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+}
+#contenedor2 {
+	height: auto;
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #999999;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+}
+
+#index_top_sistema {
+	font-family: "Rage Italic";
+	font-size: 50px;
+	color: #FFF;
+	height: 100px;
+	width: 500px;
+	padding-top: 100px;
+}
+
+.EDITARCopia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding: 4px;
+	border: thin solid #7092BE;
+}
+.EDITARCopiaCopia2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #F8F8F8;
+	padding: 4px;
+	border: thin solid #002951;
+}
+.EDITARCopiaCopia2Copia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	padding: 4px;
+	border: thin solid #57ABC3;
+	background-color: #F4F4F4;
+}
+
+
+.EDITARCopiaCopia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	background-color: #333333;
+	padding: 4px;
+	border: thin solid #CCCCCC;
+}
+
+
+
+.Blancos {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	color: #FFF;
+}
+.BlancosCopia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+.BlancosGris {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #CCC;
+}
+.BlancosSelection {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: underline;
+	background-color: #57ABC3;
+}
+
+
+
+.Negros {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	color: #000;
+}
+
+.ROJO {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #72B114;
+	background-repeat: no-repeat;
+}
+
+.Blancos_chico {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	text-decoration: none;
+}
+.Blancos_chicoCopia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000;
+	text-decoration: none;
+	text-align: left;
+}
+
+.Menues {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #1B636F;
+}
+
+
+.INGRESAR_clientes {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	background-color: #363636;
+}
+
+.negros {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+}
+
+
+.MENU {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	text-align: center;
+}
+.DATOS_TECNICOS {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: x-small;
+	color: #004C9A;
+	text-align: center;
+}
+.CLASE_buscar_clientes {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	border-bottom-width: thin;
+	border-bottom-style: none;
+	border-right-color: #73B114;
+	border-bottom-color: #73B114;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: #363636;
+	color: #FFF;
+}
+
+.CLASE_CLIENTES {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	color: #FFF;
+	background-color: #002951;
+}
+.CLASE_INUTIL {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	color: #333;
+	background-color: #000000;
+}
+
+
+
+
+.LINK {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	color: #666;
+	text-decoration: none;
+}
+.LINKCopia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #59ABC3;
+	text-decoration: none;
+}
+.LINKSub {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #7092BE;
+	text-decoration: none;
+}
+
+.LINKCopiaCopia {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #004C9A;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+
+
+#index_top_top {
+	background-color: #333;
+	height: 5px;
+	width: auto;
+}
+#index_welcome {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: x-small;
+	height: 40px;
+	width: auto;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #F4F4F4;
+	background-color: #000000;
+}
+#index_menu {
+	height: 55px;
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	text-align: center;
+	border-bottom-width: thin;
+	border-bottom-style: none;
+	border-right-width: thin;
+	border-left-width: thin;
+	border-right-style: none;
+	border-left-style: none;
+	border-right-color: #F4F4F4;
+	border-left-color: #F4F4F4;
+	border-top-style: none;
+}
+#index_foot {
+	background-image: url(../images/repeat_top.png);
+	height: 20px;
+	width: 950px;
+	border-top-width: thick;
+	border-top-style: solid;
+	border-top-color: #F4F4F4;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	text-align: center;
+	color: #F00;
+	border-bottom-width: thick;
+	border-bottom-style: solid;
+	border-bottom-color: #F4F4F4;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+#sistema_bienvenido {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	height: 230px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #333;
+}
+#sistema_welcome_top {
+	float: right;
+	height: 30px;
+	width: 360px;
+	padding-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: x-small;
+	color: #666;
+}
+#sistema_welcome_left {
+	float: left;
+	height: 25px;
+	width: 200px;
+	padding-top: 15px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: x-small;
+	color: #FFFFFF;
+	padding-left: 20px;
+}
+
+
+
+#index_footer {
+	background-color: #000000;
+	height: 70px;
+	width: 950px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: x-small;
+	color: #FFF;
+	text-align: center;
+	padding-top: 40px;
+}
+
+
+
+
+#index_logo {
+	float: left;
+	height: 120px;
+	width: 250px;
+	background-image: url(../images/logo_netland.png);
+	margin-top: 20px;
+}
+
+#index_top {
+	height: 293px;
+	width: 950px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #F4F4F4;
+	background-image: url(../images/banner_top%20copy.jpg);
+}
+.formularios {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	color: #004C9A;
+	text-align: left;
+}
+#index_menu_principal {
+	float: left;
+	height: 55px;
+	width: 950px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #56A6BD;
+}
+#inventario_usted_esta {
+	float: right;
+	height: 56px;
+	width: 275px;
+	border-left-width: thick;
+	border-left-style: double;
+	border-left-color: #F4F4F4;
+	background-image: url(../images/usted_esta_en_inventario.png);
+}
+#inventario_usted_esta_modificar {
+	float: right;
+	height: 56px;
+	width: 275px;
+	border-left-width: thick;
+	border-left-style: double;
+	border-left-color: #F4F4F4;
+	background-image: url(../images/usted_esta_en_inventario.png);
+}
+#inventario_usted_esta_modificar2 {
+	float: right;
+	height: 56px;
+	width: 275px;
+	border-left-width: thick;
+	border-left-style: double;
+	border-left-color: #F4F4F4;
+	background-image: url(../images/usted_esta_en_menu_cliente.png);
+}
+
+
+#inventario_submenu {
+	height: 40px;
+	width: 950px;
+	border-top-style: none;
+	padding-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+}
+#inventario_submenu3 {
+	height: 600px;
+	width: 1000px;
+	border-top-style: none;
+	padding-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding-left: 95px;
+}
+#inventario_submenu31 {
+	height: 800px;
+	width: 800px;
+	border-top-style: none;
+	padding-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding-left: 90px;
+}
+
+#inventario_submenu4 {
+	height: 250px;
+	width: 900px;
+	border-top-style: none;
+	padding-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding-left: 40px;
+	background-image: url(../images/eva.png);
+}
+#inventario_submenu44 {
+	height: auto;
+	width: 900px;
+	border-top-style: none;
+	padding-top: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding-left: 40px;
+}
+
+
+
+#inventario_bienvenido {
+	height: 200px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+}
+#inventario_sub_menu_1 {
+	float: left;
+	height: 60px;
+	width: 800px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	padding-left: 5px;
+}
+#inventario_modulo_ingresos {
+	height: 300px;
+	width: 950px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+}
+#inventario_modulo_ingresosgra {
+	height: 550px;
+	width: 1000px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+}
+
+#inventario_modulo_ingresos2 {
+	height: auto;
+	width: 950px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: x-small;
+	text-align: center;
+	color: #333;
+	margin: auto;
+}
+#sistema_ingreso_cliente {
+	height: 400px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/ingreso_cliente.png);
+}
+#sistema_ingreso_ticket_nuevo {
+	height: auto;
+	width: 920px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	background-image: url(../images/soporte_ti.jpg);
+	padding-left: 30px;
+}
+#sistema_ingreso_ticket_nuevo33 {
+	height: 1200px;
+	width: 970px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+}
+#sistema_ingreso_ticket_nuevo34 {
+	height: 1200px;
+	width: 970px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+}
+#ind_1 {
+	float: left;
+	height: 350px;
+	width: 450px;
+}
+#ind_2 {
+	float: right;
+	height: 350px;
+	width: 450px;
+}
+
+
+
+
+.indicadores {
+	float: left;
+	height: 350px;
+	width: 450px;
+}
+
+#sistema_ingreso_ticket_nuevo2 {
+	height: 200px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/busqueda_dato_tecnico.png);
+}
+
+
+#sistema_ingreso_cliente3 {
+	height: 300px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/ingreso_cliente.png);
+}
+
+#sistema_ingreso_cliente2 {
+	height: 325px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/soporte.jpg);
+}
+#ticket_index {
+	height: 250px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/ticket_soporte.png);
+}
+#ticket_index2 {
+	height: 180px;
+	width: 970px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+}
+#ticket_index3 {
+	height: 450px;
+	width: 950px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	color: #333;
+	margin: auto;
+	text-decoration: none;
+}
+
+
+
+
+#sistema_ingreso_dato_tecnico {
+	height: 550px;
+	width: 925px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 35px;
+}
+#sistema_ingreso_dato_tecnico_busqueda {
+	height: 210px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/busqueda_dato_tecnico.png);
+}
+#radio_planning {
+	height: 200px;
+	width: 900px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/radio.png);
+}
+#indi {
+	height: 350px;
+	width: 900px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/construccion.png);
+}
+#indi99 {
+	height: 430px;
+	width: 900px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/indicadores.jpg);
+}
+#indi999 {
+	height: 500px;
+	width: 900px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	color: #333;
+	margin: auto;
+	padding-left: 0px;
+}
+#indi666 {
+	height: auto;
+	width: 900px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	color: #333;
+	margin: auto;
+	padding-left: 0px;
+}
+
+
+
+
+#radio_planning222 {
+	height: 200px;
+	width: 900px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/eva.png);
+}
+
+#sin_privilegios {
+	height: 200px;
+	width: 900px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/sin_privilegios.png);
+}
+
+#radio_planning_kml {
+	height: 350px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/kml_grande.png);
+}
+
+#radio_planning_sin {
+	height: 200px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/alertas.png);
+}
+
+#radio_planning_ip {
+	height: 200px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/alertas.png);
+}
+#radio_planning_busqueda {
+	height: 230px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/busqueda_dato_tecnico.png);
+}
+#radio_planning_resultado {
+	height: auto;
+	width: 910px;
+	font-size: 11px;
+	text-align: center;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+
+
+#radio_planning_ingresos {
+	height: 600px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/radio_ingresos.png);
+}
+#radio_planning_ingresos10 {
+	height: 570px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/radio_ingresos.png);
+}
+
+#radio_planning_ingresos_estaciones {
+	height: 200px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/radio.png);
+}
+#radio_planning_foto {
+	height: 610px;
+	width: 835px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+#sinkmz {
+	height: 200px;
+	width: 910px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/alertas.png);
+}
+
+
+
+
+#sin_registros {
+	height: 210px;
+	width: 900px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	margin: auto;
+	padding-left: 30px;
+	background-image: url(../images/alertas.png);
+}
+
+
+.form_dato {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: x-small;
+	color: #004C9A;
+	text-align: right;
+}
+
+
+
+
+#inventario_ingresos_menu_left {
+	float: left;
+	height: 250px;
+	width: 238px;
+	margin-left: 70px;
+}
+#inventario_ingresos_menu_left4 {
+	float: left;
+	height: auto;
+	width: 238px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	margin-left: 70px;
+}
+
+#inventario_ingresos_menu_left2 {
+	float: left;
+	height: 200px;
+	width: 238px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	margin-left: 70px;
+	color: #333;
+}
+.Titulos {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#notita {
+	height: 130px;
+	width: 130px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: x-small;
+	padding-top: 60px;
+	padding-left: 58px;
+	color: #324CA6;
+}
+
+
+#inventario_modulo_left_menu {
+	height: 17px;
+	width: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-align: center;
+}
+#inventario_modulo_right {
+	float: right;
+	height: 250px;
+	width: 500px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding-right: 70px;
+	text-align: left;
+	color: #333;
+	background-image: url(../images/ingresos.png);
+}
+#inventario_modulo_right5 {
+	float: right;
+	height: 250px;
+	width: 500px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding-right: 70px;
+	text-align: left;
+	color: #333;
+}
+
+#inventario_modulo_right3 {
+	float: right;
+	height: 300px;
+	width: 500px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	padding-right: 80px;
+	text-align: left;
+	color: #333;
+}
+#inventario_busqueda {
+	height: 250px;
+	width: 919px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	color: #333;
+	background-image: url(../images/busqueda_dato_tecnico.png);
+	padding-left: 30px;
+}
+
+#inventario_modulo_right4 {
+	float: right;
+	height: 300px;
+	width: 500px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	padding-right: 70px;
+	text-align: left;
+	color: #333;
+}
+
+
+#inventario_menu_rght {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	height: 17px;
+	width: auto;
+	border-bottom-width: thin;
+	border-bottom-style: none;
+	border-bottom-color: #333333;
+}
+#inventario_modulo_ingresos_activos {
+	height: 650px;
+	width: 950px;
+}
+#inventario_modulo_ingresos_activos11 {
+	height: 350px;
+	width: 950px;
+}
+
+#inventario_modulo_ingresos_activos4 {
+	height: 380px;
+	width: 1000px;
+	background-image: url(../images/soporte_ti.png);
+}
+
+#inventario_modulo_right_ingresos {
+	float: right;
+	height: 480px;
+	width: 500px;
+	padding-right: 70px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+}
+#inventario_modulo_right_ingresos12 {
+	float: right;
+	height: 250px;
+	width: 500px;
+	padding-right: 70px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+}
+
+#crear_ticket {
+	float: left;
+	height: 300px;
+	width: 600px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	padding-left: 35px;
+}
+
+#inventario_mas_infor {
+	float: right;
+	height: 480px;
+	width: 500px;
+	padding-right: 70px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+}
+
+#mas_infor {
+	height: 650px;
+	width: 900px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	padding-left: 30px;
+	background-image: url(../images/inventario_mas_info.png);
+}
+
+#registro_duplicado {
+	float: right;
+	height: 200px;
+	width: 500px;
+	padding-right: 70px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	color: #333;
+	text-align: center;
+}
+
+#nota {
+	height: 260px;
+	width: 238px;
+	background-image: url(../images/nota.png);
+}
+#inventario_menu_lateral {
+	height: 180px;
+	width: 238px;
+}
+.iconos_top {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	text-decoration: none;
+}
+.texto {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	text-decoration: none;
+	text-align: left;
+}
+
+.FOOT {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	text-align: left;
+}
+.FOOT2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #D4D972;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+.iconos_topCENTRO {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+	text-align: center;
+}
+#footer_pro {
+	float: left;
+	height: 100px;
+	width: 300px;
+}
+#logo_icarus {
+	float: right;
+	height: 150px;
+	width: 200px;
+	background-image: url(../images/icarus.png);
+}
+#datos_tecnicos_left {
+	float: left;
+	height: 200px;
+	width: 550px;
+}
+#dato_tecnico_ticket {
+	float: right;
+	height: 200px;
+	width: 298px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #000;
+	text-align: center;
+	margin-right: 47px;
+	background-image: url(../images/ticket.png);
+	text-decoration: none;
+}

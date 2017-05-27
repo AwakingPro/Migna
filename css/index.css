@@ -1,0 +1,156 @@
+@charset "utf-8";
+#contenedor {
+	height: auto;
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #999999;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+}
+.CLASE_INDEX {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	background-color: #CFC;
+}
+
+.blanco {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+.Clase {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #C1CEDF;
+	padding: 2px;
+}
+.lp {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color: #FFF;
+	text-align: center;
+}
+
+#index_top_sistema {
+	float: left;
+	height: 100px;
+	width: 500px;
+	font-family: "Rage Italic";
+	color: #FFF;
+	font-size: 50px;
+	padding-top: 50px;
+}
+
+
+
+#index_login {
+	height: 180px;
+	width: 260px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	color: #333;
+	text-align: left;
+	background-color: #FFFFFF;
+}
+
+#index_top_top {
+	background-color: #333;
+	height: 5px;
+	width: auto;
+}
+#index_welcome {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: x-small;
+	height: 40px;
+	width: auto;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #F4F4F4;
+	background-color: #000;
+	color: #FFF;
+}
+#index_menu {
+	height: 57px;
+	width: 950px;
+	background-color: #FFF;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	text-align: center;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #F4F4F4;
+	;
+}
+#index_login_contenedor {
+	height: 220px;
+	width: 950px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	color: #F00;
+	text-align: center;
+}
+#index_foot {
+	background-image: url(../images/repeat_top.png);
+	height: 20px;
+	width: 950px;
+	border-top-width: thick;
+	border-top-style: solid;
+	border-top-color: #F4F4F4;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+	text-align: center;
+	padding-top: 5px;
+	margin-top: 5px;
+	color: #F00;
+}
+#index_footer {
+	background-color: #000000;
+	height: 50px;
+	width: 950px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: x-small;
+	color: #FFF;
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+
+
+#index_logo {
+	float: left;
+	height: 120px;
+	width: 250px;
+	background-image: url(../images/logo_netland.png);
+	margin-top: 20px;
+}
+
+#index_top {
+	height: 293px;
+	width: 950px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #F4F4F4;
+	background-image: url(../images/banner_top%20copy.jpg);
+}
+.formularios {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #2570AA;
+	text-align: center;
+}

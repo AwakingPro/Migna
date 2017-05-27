@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: 'TeamworkRegular';
+    src: url('../jQuery-Php-Gantt/teamwork-regular-webfont.eot');
+    src: url('../jQuery-Php-Gantt/teamwork-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../jQuery-Php-Gantt/teamwork-regular-webfont.woff') format('woff'),
+url('../jQuery-Php-Gantt/teamwork-regular-webfont.ttf') format('truetype'),
+url('../jQuery-Php-Gantt/teamwork-regular-webfont.otf') format('opentype'),
+url('../jQuery-Php-Gantt/teamwork-regular-webfont.svg#TeamworkRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+

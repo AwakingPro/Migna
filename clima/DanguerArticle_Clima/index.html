@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Ejemplo de la API de Temperatura de Yahoo/Weather.com</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	
+	buscarCiudades = function() {
+		var ciudad = jQuery.trim($('#txtCiudad').val());
+		
+		if (ciudad) {
+			//parametros para buscar la ciudad
+			var parametros = {};
+			parametros.op = 'busqueda';
+			parametros.ciudad = ciudad;
+			
+			//llamamos al script php mediante ajax
+			$.post('ajax.php', parametros, function(resultado) {
+				if (resultado.error)
+					alert(resultado.mensaje);
+				else {
+					var i=0;
+					var _html = '';
+					
+					for (i=0; i<resultado.ciudades.length; i++) {
+						_html += '<option value="'+resultado.ciudades[i].localidad_id+'">'+resultado.ciudades[i].nombre+'</option>';
+					} 
+					
+					$('#cmbCiudades').html(_html);
+				}
+			}, 'json');
+		} else {
+			alert('Debe escribir un valor');
+		}
+	}
+	
+	obtenerClima = function() {
+		var localidad_id = $('#cmbCiudades').val();
+		
+		if (localidad_id) {
+			//parametros para buscar la ciudad
+			var parametros = {};
+			parametros.op = 'clima';
+			parametros.localidad_id = localidad_id;
+			
+			//llamamos al script php mediante ajax
+			$.post('ajax.php', parametros, function(resultado) {
+				if (resultado.error)
+					alert(resultado.mensaje);
+				else {
+					var clima = resultado.clima;
+					
+					$('#lblFecha').html(clima.fecha);
+					$('#lblEstado').html(clima.estado);
+					$('#lblTemperatura').html(clima.temperatura);
+					$('#imgEstado').html('<img src="iconos_clima/'+clima.codigo+'.png">');
+					$('#panelResultados').css('display', 'block');	
+				}
+			}, 'json');
+		} else {
+			alert('Debe escribir un valor');
+		}
+	}	
+	
+	verificarEnter = function(evt, mainFunction){
+		var keynum = 0;
+		
+		if (window.event) keynum = evt.keyCode;
+		else if(evt.which) keynum = evt.which;
+		
+		if (keynum == 0xD) {
+			mainFunction();
+			return false;
+		}
+		return true;
+	}
+	</script>
+	
+	
+	<style type="text/css">
+		body {
+			font-family: Arial, Verdana, sans-serif;
+			font-size: 13px;
+			color: #1e1e1e;
+			background-color: #fff;
+		}
+		
+		#cmbCiudades {
+			width: 240px;
+		}
+		#txtCiudad {
+			width: 203px;
+		}
+		
+		#panelResultados {
+			margin-top: 20px;
+			clear: both;
+			display: none;
+			border: 1px solid #eee;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<div id="panelBusqueda">
+			Buscar Ciudad: 
+			<input id="txtCiudad" type="text" value="Puebla" onkeypress="return verificarEnter(event, buscarCiudades);">
+			<input type="button" value="Buscar Ciudades" onclick="buscarCiudades();">
+			<hr>
+			Ciudades: 
+			<select id="cmbCiudades"><option>Santiago</option></select>
+			<input type="button" value="Obtener Clima" onclick="obtenerClima();">
+		</div>
+		
+		<div id="panelResultados">
+			<div id="imgEstado"></div>
+			<div id="panelResultadosInformacion">
+				<strong>Temperatura:</strong> <span id="lblTemperatura"></span>&deg; C<br>
+				<strong>Estado:</strong> <span id="lblEstado"></span><br>
+				<strong>Fecha:</strong> <span id="lblFecha"></span><br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
