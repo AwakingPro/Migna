@@ -18,7 +18,6 @@ $(document).ready(function(){
 
         var provincia = $("#provincias").val();
         var data = "Id="+provincia;
-        alert(data);
 
         $.ajax({
             type: "POST",
@@ -27,7 +26,6 @@ $(document).ready(function(){
             success: function(response){
 
                 $('#mostrar_comuna').html(response);
-                alert(response);
             }
         });
     });
