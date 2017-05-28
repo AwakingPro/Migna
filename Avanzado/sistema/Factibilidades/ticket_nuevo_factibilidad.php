@@ -20,7 +20,6 @@ $sql_cliente=mysql_query("SELECT cliente FROM SP_soporte_crear_cliente ORDER BY 
 $sql_status=mysql_query("SELECT status FROM TICKET_status ");
 $sql_como=mysql_query("SELECT como FROM TICKET_como ");
 $sql_plan=mysql_query("SELECT plan FROM TICKET_plan ");
-$sql_comuna=mysql_query("SELECT comuna FROM comunas_factibilidad ORDER BY comuna ASC");
 
 
 $sql_hora=mysql_query("SELECT hora FROM TICKET_hora ");
@@ -158,18 +157,17 @@ $bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$usuario'");
 	top: 244px;
 }
 </style>
-<script type="text/javascript" src="../../../js/jquery.min.js"></script>
-<script type="text/javascript" src="../../../js/jquery-ui.min.js"></script>
-   <link href="../../../css/sistema.css" rel="stylesheet" type="text/css" />
-    <script type='text/javascript' src='../../../javascript/jquery.autocomplete.js'></script>
-<link rel="stylesheet" type="text/css" href="../../../javascript/jquery.autocomplete.css" />
-  <link href="../../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
-  <link href="../../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
-  <script src="../../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-  <script type="text/javascript" src="../../../script/jquery.js"></script>
-  <script type="text/javascript" src="../../../script/jquery.jCombo.min.js"></script>
-    <script src="../../../SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
-    <script src="../../../SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<link href="../../../css/sistema.css" rel="stylesheet" type="text/css" />
+<link href="../../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="../../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<script src="../../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../../js/jquery-2.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../js/Ventas/Ventas.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+<script src="../../../SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="../../../SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
 <link href="../../../SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="../../../css/estilos2.css">
 <script>
@@ -203,6 +201,7 @@ $( "#dialog" ).dialog();
 	top: 341px;
 	border: thin dashed #F30;
 }
+
 </style>
 <link href="../../../SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
@@ -328,13 +327,40 @@ $().ready(function() {
     <span class="textfieldMaxCharsMsg"></span></span></td>
   </tr>
   <tr>
-    <td>Comuna</td>
+    <td>Region</td>
     <td>:</td>
-    <td colspan="2"><select name="comuna" class="formulario_grande_intranet2"  >
-      <?php while($row = mysql_fetch_array($sql_comuna)){ ?>
-      <option value="<?php echo $row['comuna']; ?>" size="30"><?php echo $row['comuna']; ?></option>
+    <td colspan="2">
+      <select id="region" class="formulario_grande_intranet2"  >
+      <?php 
+      $QueryRegion = mysql_query("SELECT region_id,region_nombre FROM regiones order by region_id ASC");
+      echo "<option>Seleccione</option>";
+      while($row = mysql_fetch_array($QueryRegion)){ ?>
+      
+      <option value="<?php echo $row['0']; ?>" size="30"><?php echo utf8_encode($row['1']); ?></option>
       <?php } ?>
     </select></td>
+  </tr>
+  <tr>
+    <td>Provicia</td>
+    <td>:</td>
+    <td colspan="2">
+      <div id="mostrar_provincia">
+      <select  class="formulario_grande_intranet2"  disabled>
+        <option  size="30">Seleccione</option>
+      </select>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>Comuna</td>
+    <td>:</td>
+    <td colspan="2">
+      <div id="mostrar_comuna">
+      <select  class="formulario_grande_intranet2"  disabled>
+        <option  size="30">Seleccione</option>
+      </select>
+      </div>
+    </td>
   </tr>
   <tr>
     <td>Como nos conoció</td>
