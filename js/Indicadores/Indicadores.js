@@ -76,6 +76,7 @@ $(document).ready(function(){
             console.log(response.uno);
             console.log(response.dos);
             var ctx = document.getElementById("myLine").getContext('2d');
+            
             ctx.canvas.width = 900;
             ctx.canvas.height = 500;
             var myLine = new Chart(ctx, {
@@ -124,6 +125,7 @@ $(document).ready(function(){
                     ]
                 },
                 options: {
+                onClick: graphClickEvent,
                 responsive: false,
                 maintainAspectRatio: true,
                     scales: {
@@ -135,6 +137,10 @@ $(document).ready(function(){
                     }
                 }
             });
+            function graphClickEvent(event, item){
+                console.log ('legend onClick', event);
+                console.log('legd item', item);
+            }
         }
     });
 });
