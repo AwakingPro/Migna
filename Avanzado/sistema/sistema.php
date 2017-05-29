@@ -359,9 +359,18 @@ $(document).ready(function() {
     <center>
     
           
-    <center><div id="instalaciones_todas">
-      <div id="datos_com"><strong>Gráfico Histórico de Instalaciones : </strong>  </strong><br /><br />
-</div><canvas id="myChart" width="400" height="400"></canvas></div></center>
+      
+      <div id="instalaciones_todas">
+        <center>
+          <div id="datos_com"><strong>Gráfico Histórico de Instalaciones : </strong>  </strong><br /><br /></div>
+          <canvas id="myChart" width="400" height="400"></canvas>
+        </center>
+
+        <center>
+          <div id="datos_com"><strong>Gráfico Factibilidades Año : <?php echo date('Y');?>  </strong>  </strong><br /><br /></div>
+          <canvas id="myLine" width="400" height="400"></canvas>
+        </center>
+      </div>
     <div id="instalaciones_todas">
       <div id="datos_com"><strong>Tipificación de Gestiones Anuales</strong>  </strong><br /><br />
     </div>

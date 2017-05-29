@@ -65,4 +65,76 @@ $(document).ready(function(){
             });
         }
     });
+
+
+    $.ajax({
+        type: "POST",
+        url: "../../includes/Indicadores/Factibilidades.php",
+        data:'',
+        dataType: 'json',
+        success: function(response){
+            console.log(response.uno);
+            console.log(response.dos);
+            var ctx = document.getElementById("myLine").getContext('2d');
+            ctx.canvas.width = 900;
+            ctx.canvas.height = 500;
+            var myLine = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: response.uno,
+                    datasets: [{
+                        label: "Positivas",
+                        fillColor: "rgba(79, 178, 115,1)",
+                        borderColor: "rgba(79, 178, 115,1)",
+                        backgroundColor: "rgba(79, 178, 115,0.2)",
+                        strokeColor: "rgba(79, 178, 115,1)",
+                        highlightFill: "rgba(79, 178, 115,1)",
+                        highlightStroke: "rgba(79, 178, 115,1)",
+                        showTooltip: false, //NEW OPTION DON"T NEED TO INCLUDE IT IF YOU WANT TO DISPLAY BUT WON"T HURT IF YOU DO
+                        data: response.dos
+                    }, {
+                        label: "Negativas",
+                        fillColor: "rgba(255, 99, 132,1)",
+                        borderColor: "rgba(255, 99, 132,1)",
+                        backgroundColor: "rgba(255, 99, 132,0.2)",
+                        strokeColor: "rgba(255, 99, 132,1)",
+                        highlightFill: "rgba(255, 99, 132,1)",
+                        highlightStroke: "rgba(255, 99, 132,1)",
+                        showTooltip: false, //NEW OPTION DON"T NEED TO INCLUDE IT IF YOU WANT TO DISPLAY BUT WON"T HURT IF YOU DO
+                        data: response.tres
+                    }, {
+                        label: "Rechazadas",
+                        fillColor: "rgba(255, 159, 64,1)",
+                        borderColor: "rgba(255, 159, 64,1)",
+                        backgroundColor: "rgba(255, 159, 64,0.2)",
+                        strokeColor: "rgba(255, 159, 64,1)",
+                        highlightFill: "rgba(255, 159, 64,1)",
+                        highlightStroke: "rgba(255, 159, 64,1)",
+                        data: response.cuatro
+                    }, {
+                        label: "Pendientes",
+                        fillColor: "rgba(0,0,0,1)",
+                        borderColor: "rgba(0,0,0,1)",
+                        backgroundColor: "rgba(0, 0, 0,0.2)",
+                        strokeColor: "rgba(0,0,0,1)",
+                        highlightFill: "rgba(0,0,0,1)",
+                        highlightStroke: "rgba(0,0,0,1)",
+                        data: response.cinco
+                    }
+                    ]
+                },
+                options: {
+                responsive: false,
+                maintainAspectRatio: true,
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+    });
 });
