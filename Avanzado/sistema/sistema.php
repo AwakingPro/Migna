@@ -83,10 +83,13 @@ $int_2013_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Interferencia' 
 $int_2014_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Interferencia' and fecha_creacion BETWEEN '2014-01-01 00:00:00' and '2014-12-31 00:00:00'");
 $int_2015_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Interferencia' and fecha_creacion BETWEEN '2015-01-01 00:00:00' and '2015-12-31 00:00:00'");
 $int_2016_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Interferencia' and fecha_creacion BETWEEN '2016-01-01 00:00:00' and '2016-12-31 00:00:00'");
+$int_2017_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Interferencia' and fecha_creacion BETWEEN '2017-01-01 00:00:00' and '2017-12-31 00:00:00'");
+
 $int_2013=mysql_num_rows($int_2013_sql);
 $int_2014=mysql_num_rows($int_2014_sql);
 $int_2015=mysql_num_rows($int_2015_sql);
 $int_2016=mysql_num_rows($int_2016_sql);
+$int_2017=mysql_num_rows($int_2017_sql);
 
 //=============================================================================================
 //Despaneo
@@ -96,10 +99,13 @@ $des_2013_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Despaneo' and f
 $des_2014_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Despaneo' and fecha_creacion BETWEEN '2014-01-01 00:00:00' and '2014-12-31 00:00:00'");
 $des_2015_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Despaneo' and fecha_creacion BETWEEN '2015-01-01 00:00:00' and '2015-12-31 00:00:00'");
 $des_2016_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Despaneo' and fecha_creacion BETWEEN '2016-01-01 00:00:00' and '2016-12-31 00:00:00'");
+$des_2017_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Despaneo' and fecha_creacion BETWEEN '2017-01-01 00:00:00' and '2017-12-31 00:00:00'");
+
 $des_2013=mysql_num_rows($des_2013_sql);
 $des_2014=mysql_num_rows($des_2014_sql);
 $des_2015=mysql_num_rows($des_2015_sql);
 $des_2016=mysql_num_rows($des_2016_sql);
+$des_2017=mysql_num_rows($des_2017_sql);
 
 //=============================================================================================
 //Red
@@ -109,10 +115,13 @@ $desc_2013_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconfiguraci
 $desc_2014_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconfiguracion equipos' and fecha_creacion BETWEEN '2014-01-01 00:00:00' and '2014-12-31 00:00:00'");
 $desc_2015_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconfiguracion equipos' and fecha_creacion BETWEEN '2015-01-01 00:00:00' and '2015-12-31 00:00:00'");
 $desc_2016_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconfiguracion equipos' and fecha_creacion BETWEEN '2016-01-01 00:00:00' and '2016-12-31 00:00:00'");
+$desc_2017_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconfiguracion equipos' and fecha_creacion BETWEEN '2017-01-01 00:00:00' and '2017-12-31 00:00:00'");
+
 $desc_2013=mysql_num_rows($desc_2013_sql);
 $desc_2014=mysql_num_rows($desc_2014_sql);
 $desc_2015=mysql_num_rows($desc_2015_sql);
 $desc_2016=mysql_num_rows($desc_2016_sql);
+$desc_2017=mysql_num_rows($desc_2017_sql);
 
 //=============================================================================================
 //Red
@@ -122,10 +131,14 @@ $eq_2013_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Equipo cliente' 
 $eq_2014_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Equipo cliente' and fecha_creacion BETWEEN '2014-01-01 00:00:00' and '2014-12-31 00:00:00'");
 $eq_2015_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Equipo cliente' and fecha_creacion BETWEEN '2015-01-01 00:00:00' and '2015-12-31 00:00:00'");
 $eq_2016_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Equipo cliente' and fecha_creacion BETWEEN '2016-01-01 00:00:00' and '2016-12-31 00:00:00'");
+$eq_2017_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Equipo cliente' and fecha_creacion BETWEEN '2017-01-01 00:00:00' and '2017-12-31 00:00:00'");
+
 $eq_2013=mysql_num_rows($eq_2013_sql);
 $eq_2014=mysql_num_rows($eq_2014_sql);
 $eq_2015=mysql_num_rows($eq_2015_sql);
 $eq_2016=mysql_num_rows($eq_2016_sql);
+$eq_2017=mysql_num_rows($eq_2017_sql);
+
 
 //=============================================================================================
 //Red
@@ -135,10 +148,13 @@ $eqd_2013_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Equipos descone
 $eqd_2014_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Equipos desconectados' and fecha_creacion BETWEEN '2014-01-01 00:00:00' and '2014-12-31 00:00:00'");
 $eqd_2015_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Equipos desconectados' and fecha_creacion BETWEEN '2015-01-01 00:00:00' and '2015-12-31 00:00:00'");
 $eqd_2016_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Equipos desconectados' and fecha_creacion BETWEEN '2016-01-01 00:00:00' and '2016-12-31 00:00:00'");
+$eqd_2017_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Equipos desconectados' and fecha_creacion BETWEEN '2017-01-01 00:00:00' and '2017-12-31 00:00:00'");
+
 $eqd_2013=mysql_num_rows($eqd_2013_sql);
 $eqd_2014=mysql_num_rows($eqd_2014_sql);
 $eqd_2015=mysql_num_rows($eqd_2015_sql);
 $eqd_2016=mysql_num_rows($eqd_2016_sql);
+$eqd_2017=mysql_num_rows($eqd_2017_sql);
 
 //=============================================================================================
 //Red
@@ -148,10 +164,13 @@ $eqdp_2013_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Poco conocimie
 $eqdp_2014_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Poco conocimiento' and fecha_creacion BETWEEN '2014-01-01 00:00:00' and '2014-12-31 00:00:00'");
 $eqdp_2015_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Poco conocimiento' and fecha_creacion BETWEEN '2015-01-01 00:00:00' and '2015-12-31 00:00:00'");
 $eqdp_2016_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Poco conocimiento' and fecha_creacion BETWEEN '2016-01-01 00:00:00' and '2016-12-31 00:00:00'");
+$eqdp_2017_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Poco conocimiento' and fecha_creacion BETWEEN '2017-01-01 00:00:00' and '2017-12-31 00:00:00'");
+
 $eqdp_2013=mysql_num_rows($eqdp_2013_sql);
 $eqdp_2014=mysql_num_rows($eqdp_2014_sql);
 $eqdp_2015=mysql_num_rows($eqdp_2015_sql);
 $eqdp_2016=mysql_num_rows($eqdp_2016_sql);
+$eqdp_2017=mysql_num_rows($eqdp_2017_sql);
 //=============================================================================================
 //Red
 //=============================================================================================
@@ -160,10 +179,13 @@ $d_2013_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconocido' and 
 $d_2014_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconocido' and fecha_creacion BETWEEN '2014-01-01 00:00:00' and '2014-12-31 00:00:00'");
 $d_2015_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconocido' and fecha_creacion BETWEEN '2015-01-01 00:00:00' and '2015-12-31 00:00:00'");
 $d_2016_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconocido' and fecha_creacion BETWEEN '2016-01-01 00:00:00' and '2016-12-31 00:00:00'");
+$d_2017_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconocido' and fecha_creacion BETWEEN '2017-01-01 00:00:00' and '2017-12-31 00:00:00'");
+
 $d_2013=mysql_num_rows($d_2013_sql);
 $d_2014=mysql_num_rows($d_2014_sql);
 $d_2015=mysql_num_rows($d_2015_sql);
 $d_2016=mysql_num_rows($d_2016_sql);
+$d_2017=mysql_num_rows($d_2017_sql);
 
 //=============================================================================================
 //Red
@@ -173,10 +195,13 @@ $de_2013_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconfiguracion
 $de_2014_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconfiguracion equipos' and fecha_creacion BETWEEN '2014-01-01 00:00:00' and '2014-12-31 00:00:00'");
 $de_2015_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconfiguracion equipos' and fecha_creacion BETWEEN '2015-01-01 00:00:00' and '2015-12-31 00:00:00'");
 $de_2016_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconfiguracion equipos' and fecha_creacion BETWEEN '2016-01-01 00:00:00' and '2016-12-31 00:00:00'");
+$de_2017_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Desconfiguracion equipos' and fecha_creacion BETWEEN '2017-01-01 00:00:00' and '2017-12-31 00:00:00'");
+
 $de_2013=mysql_num_rows($de_2013_sql);
 $de_2014=mysql_num_rows($de_2014_sql);
 $de_2015=mysql_num_rows($de_2015_sql);
 $de_2016=mysql_num_rows($de_2016_sql);
+$de_2017=mysql_num_rows($de_2017_sql);
 
 //=============================================================================================
 //Red
@@ -186,10 +211,13 @@ $r_2013_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Reinicio de equip
 $r_2014_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Reinicio de equipos' and fecha_creacion BETWEEN '2014-01-01 00:00:00' and '2014-12-31 00:00:00'");
 $r_2015_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Reinicio de equipos' and fecha_creacion BETWEEN '2015-01-01 00:00:00' and '2015-12-31 00:00:00'");
 $r_2016_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Reinicio de equipos' and fecha_creacion BETWEEN '2016-01-01 00:00:00' and '2016-12-31 00:00:00'");
+$r_2017_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Reinicio de equipos' and fecha_creacion BETWEEN '2017-01-01 00:00:00' and '2017-12-31 00:00:00'");
+
 $r_2013=mysql_num_rows($r_2013_sql);
 $r_2014=mysql_num_rows($r_2014_sql);
 $r_2015=mysql_num_rows($r_2015_sql);
 $r_2016=mysql_num_rows($r_2016_sql);
+$r_2017=mysql_num_rows($r_2017_sql);
 
 //=============================================================================================
 //Red
@@ -199,10 +227,13 @@ $p_2013_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Problema Fisico E
 $p_2014_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Problema Fisico Equipos' and fecha_creacion BETWEEN '2014-01-01 00:00:00' and '2014-12-31 00:00:00'");
 $p_2015_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Problema Fisico Equipos' and fecha_creacion BETWEEN '2015-01-01 00:00:00' and '2015-12-31 00:00:00'");
 $p_2016_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Problema Fisico Equipos' and fecha_creacion BETWEEN '2016-01-01 00:00:00' and '2016-12-31 00:00:00'");
+$p_2017_sql=mysql_query("SELECT * FROM `TICKET` WHERE subtipo='Problema Fisico Equipos' and fecha_creacion BETWEEN '2017-01-01 00:00:00' and '2017-12-31 00:00:00'");
+
 $p_2013=mysql_num_rows($p_2013_sql);
 $p_2014=mysql_num_rows($p_2014_sql);
 $p_2015=mysql_num_rows($p_2015_sql);
 $p_2016=mysql_num_rows($p_2016_sql);
+$p_2017=mysql_num_rows($p_2017_sql);
 
   
 
@@ -220,7 +251,13 @@ $p_2016=mysql_num_rows($p_2016_sql);
 <script src="../../data/media/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="../../jquery/js/jquery-ui-1.10.4.custom.js"></script>
 <script type="text/javascript" src="../../jquery/js/jquery-ui-1.10.4.custom.min.js"></script>
-	<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js" type="text/javascript"></script>
+<script src="../../js/Indicadores/Indicadores.js" type="text/javascript"></script>
+  
 <title>Migna | Sistema Gestión de Clientes</title>
 <?php include '../../include/estructura/title.php';?>
 <link href="../../css/estilos.css" rel="stylesheet" type="text/css" />
@@ -259,6 +296,7 @@ $p_2016=mysql_num_rows($p_2016_sql);
 	font-size: 11px;
 	color: #666;
 }
+
 #apDiv4 {
 	position: absolute;
 	width: 270px;
@@ -317,12 +355,16 @@ $(document).ready(function() {
 <div id="resumen_general_index">
   <p><strong>Bienvenido al Sistema Gestión de Clientes Migna</strong></p>
 
-  <p><strong>Algunos Kpi del Sistema : </strong></p>
-
-    <div id="datos_com"><strong>Tipificación de Gestiones Anuales</strong>  </strong><br /><br />
-    </div>
+    
     <center>
+    
+          
+    <center><div id="instalaciones_todas">
+      <div id="datos_com"><strong>Gráfico Histórico de Instalaciones : </strong>  </strong><br /><br />
+</div><canvas id="myChart" width="400" height="400"></canvas></div></center>
     <div id="instalaciones_todas">
+      <div id="datos_com"><strong>Tipificación de Gestiones Anuales</strong>  </strong><br /><br />
+    </div>
       <table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>  
@@ -331,6 +373,7 @@ $(document).ready(function() {
                 <th>2014</th>
                 <th>2015</th>
                 <th>2016</th>
+                <th>2017</th>
             </tr>
         </thead>
               <tr>
@@ -339,6 +382,8 @@ $(document).ready(function() {
                 <td><center><?php echo $int_2014;?></center></td>
                 <td><center><?php echo $int_2015;?></center></td>
                 <td><center><?php echo $int_2016;?></center></td>
+                <td><center><?php echo $int_2017;?></center></td>
+
               </tr>
                 <tr>
                 <td><center>Despaneo</center></td>
@@ -346,6 +391,7 @@ $(document).ready(function() {
                 <td><center><?php echo $des_2014;?></center></td>
                 <td><center><?php echo $des_2015;?></center></td>
                 <td><center><?php echo $des_2016;?></center></td>
+                <td><center><?php echo $des_2017;?></center></td>
               </tr>
           
               <tr>
@@ -354,6 +400,7 @@ $(document).ready(function() {
                 <td><center><?php echo $eq_2014;?></center></td>
                 <td><center><?php echo $eq_2015;?></center></td>
                 <td><center><?php echo $eq_2016;?></center></td>
+                <td><center><?php echo $eq_2017;?></center></td>
               </tr>
                 <tr>
                 <td><center>Red Interna Equipos Desconectados</center></td>
@@ -361,6 +408,7 @@ $(document).ready(function() {
                 <td><center><?php echo $eqd_2014;?></center></td>
                 <td><center><?php echo $eqd_2015;?></center></td>
                 <td><center><?php echo $eqd_2016;?></center></td>
+                <td><center><?php echo $eqd_2017;?></center></td>
               </tr>
                <tr>
                 <td><center>Red Interna Poco Conocimiento</center></td>
@@ -368,6 +416,7 @@ $(document).ready(function() {
                 <td><center><?php echo $eqdp_2014;?></center></td>
                 <td><center><?php echo $eqdp_2015;?></center></td>
                 <td><center><?php echo $eqdp_2016;?></center></td>
+                <td><center><?php echo $eqdp_2017;?></center></td>
               </tr>
                 <tr>
                 <td><center>Problemas Desconocidos</center></td>
@@ -375,13 +424,15 @@ $(document).ready(function() {
                 <td><center><?php echo $d_2014;?></center></td>
                 <td><center><?php echo $d_2015;?></center></td>
                 <td><center><?php echo $d_2016;?></center></td>
+                <td><center><?php echo $d_2017;?></center></td>
               </tr>
                 <tr>
-                <td><center>Desconfiguracion de Equipos</center></td>
+                <td><center>Desconfiguración de Equipos</center></td>
                 <td><center><?php echo $de_2013;?></center></td>
                 <td><center><?php echo $de_2014;?></center></td>
                 <td><center><?php echo $de_2015;?></center></td>
                 <td><center><?php echo $de_2016;?></center></td>
+                <td><center><?php echo $de_2017;?></center></td>
               </tr>
               <tr>
                 <td><center>Reinicio de equipos</center></td>
@@ -389,29 +440,32 @@ $(document).ready(function() {
                 <td><center><?php echo $r_2014;?></center></td>
                 <td><center><?php echo $r_2015;?></center></td>
                 <td><center><?php echo $r_2016;?></center></td>
+                <td><center><?php echo $r_2017;?></center></td>
               </tr>
                  <tr>
-                <td><center>Problema Fisico de Equipos (Daños)</center></td>
+                <td><center>Problema Físico de Equipos (Daños)</center></td>
                 <td><center><?php echo $p_2013;?></center></td>
                 <td><center><?php echo $p_2014;?></center></td>
                 <td><center><?php echo $p_2015;?></center></td>
                 <td><center><?php echo $p_2016;?></center></td>
+                <td><center><?php echo $p_2017;?></center></td>
               </tr>
           </tbody>
       </table>
         </div>
-          <div id="datos_com"><strong>Gráfico Histórico de Instalaciones : </strong>  </strong><br /><br />
-</div>
-    <center><div id="instalaciones_todas"><img src="Indicadores/plot_instalaciones_todas.php" /></div></center>
         </center>
   </div>
-  </div>
-  
-</div>
+  <div>
+    
  
-<script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../../SpryAssets/SpryMenuBarRightHover.gif"});
+      </div>
+      </div>
+      
+    </div>
+    
+    <script type="text/javascript">
+    var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../../SpryAssets/SpryMenuBarRightHover.gif"});
 
-</script>
+    </script>
 </body>
 </html>
