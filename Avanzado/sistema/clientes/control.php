@@ -8,6 +8,7 @@ $database = 'SGC';
 $hora=date("G:H:s");
 $fecha= date("Y-m-d");
 $usuario=$_POST['usuario'];
+$Descripcion = $_POST['Descripcion'];
 $table = 'morosos';
 if (!@mysql_connect($db_host, $db_user, $db_pass))
     die("No se pudo establecer conexión a la base de datos");
@@ -24,7 +25,7 @@ if (!@mysql_select_db($database))
          {
              $filename = $_FILES['sel_file']['tmp_name'];
              $handle = fopen($filename, "r");
-             $sql_id = "INSERT into id_morosos(fecha,hora,usuario) values('$fecha','$hora','$usuario')";
+             $sql_id = "INSERT into id_morosos(fecha,hora,usuario,descripcion) values('$fecha','$hora','$usuario','$Descripcion')";
                 mysql_query($sql_id) or die('Error: '.mysql_error());
 				$sql_id_ver=mysql_query("SELECT id FROM id_morosos order by id ASC");
 				while($row=mysql_fetch_array($sql_id_ver)){

@@ -263,15 +263,16 @@ $().ready(function() {
  </div>
 
  <p class="Nota">  <form action='control.php' method='post' enctype="multipart/form-data">
-   Importar Archivo : <input name='sel_file' type='file' class="formulario_grande_intranet2" size='20'>
+   Importar Archivo : <input name='sel_file' type='file' class="formulario_grande_intranet" size='10'>
    <input type="hidden" value="<?php  echo $user7;?>" name="usuario" />
+   Descripción : <input type="text" name="Descripcion" id="Descripcion" class="formulario_chico_intranet">
    <input name='submit' type='submit' class="boton_intranet" value='Cargar Listado'>
   </form><?php $id=$_GET['id']; if($id==1){ ?><br /><br /><div id="error">El Archivo que intenta Cargar es Inválido! , tiene que ser un archivo csv.</div><?php } else {}?></div>
   <div id="busqueda_clientes">
     <div id="datos_com"><strong> Listas de Morosos</strong><br /></div>
       <br />
       <?php 
-	  $query_morosos=mysql_query("SELECT * FROM id_morosos");
+	  $query_morosos=mysql_query("SELECT * FROM id_morosos ");
 	  if (mysql_num_rows($query_morosos)>0){?>
       <table id="example3" class="display" cellspacing="0" width="100%">
         <thead>
@@ -284,6 +285,7 @@ $().ready(function() {
                 <th width="10%">Deuda <br />Total </th>
                 <th width="9%">Deuda <br />Recuperada </th>
                 <th width="9%">Porcentaje <BR />Recupero</th>
+                <th width="9%">Desripción</th>
                 <th width="16%">Ver</th>
 
             </tr>
@@ -291,11 +293,12 @@ $().ready(function() {
  
    
          <tr>
-        <?php $comercial=mysql_query("SELECT * FROM id_morosos ");
+        <?php $comercial=mysql_query("SELECT * FROM id_morosos order by id desc limit 5");
 
 while ($row = mysql_fetch_row($comercial)){
 	
 	 $id_morosos2=$row[0];
+   $Descripcion = $row[4];
 	
 	?> <td><center><?php echo $row[0];?></center></td>
                           <td><center><?php echo $row[1];?></center></td>
@@ -320,6 +323,7 @@ $suma3 = round($suma3 + $fila3['monto']);
 
 echo $suma4=number_format($suma3, 0, ",", "."); ?></center></td>
 <td><center><?php echo $por=round((($suma3/$suma)*100));?> %</center></td>
+<td><center><?php echo $Descripcion; ?></center></td>
     <td><center>
                              <a href="cargar.php?id_morosos=<?php echo $id_morosos2; ?>"><img src="../../../imagenes/ver.png"  /></a>
            </center></td>
@@ -327,7 +331,9 @@ echo $suma4=number_format($suma3, 0, ",", "."); ?></center></td>
                          
 
 
-        </tr><?php } ?> </tbody>
+        </tr>
+        
+        <?php } ?> </tbody>
   </table>
   <?php } else { echo "No hay Historial de Suspenciones"; }?>
  </div>
@@ -337,7 +343,7 @@ echo $suma4=number_format($suma3, 0, ",", "."); ?></center></td>
       <br />
       <?php 
 	 
-	  $query_id_morosos=mysql_query("SELECT * FROM morosos where id_morosos='$id_morosos'");
+	  $query_id_morosos=mysql_query("SELECT * FROM morosos where id_morosos='$id_morosos' ");
 	  if (mysql_num_rows($query_id_morosos)>0){?>
       <table id="example2" class="display" cellspacing="0" width="100%">
         <thead>
