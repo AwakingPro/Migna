@@ -116,39 +116,8 @@ $(document).ready(function(){
                         
                         break;
                     case "4":
-                        if(response.Response == 1){
-                            bootbox.prompt({
-                                title: "Seleccione Enlace :",
-                                inputType: 'select',
-                                inputOptions: En,
-                                callback: function (result) {
-                                    console.log(result);
-                                    if(result == null){
-                                        return;
-                                    }
-                                    else{
-                                       window.location.href = 'clientes_ingreso_acronis.php?cliente='+Cliente+'&alias='+result; 
-
-                                    }
-                                }
-                            });
-                        }
-                        else{
-                            bootbox.prompt({
-                                title: "Seleccione Enlace :",
-                                inputType: 'select',
-                                inputOptions: En,
-                                callback: function (result) {
-                                    if(result == null){
-                                        return;
-                                    }
-                                    else{
-                                        window.location.href = 'clientes_ingreso_acronis.php?cliente='+Cliente+'&alias='+result; 
-                                    }
-                                }
-                            });
-                        }
-                        break;
+                         window.location.href = 'clientes_ingreso_acronis.php?cliente='+Cliente; 
+                         break;
                 }
             }
         });

@@ -16,7 +16,7 @@ class Servicios{
        $Rut = $Data[7];
        $Alias = $Data[8];
 
-       $Validar = mysql_query("SELECT * FROM SP_servicio_acronis WHERE rut = '$Rut'");
+       $Validar = mysql_query("SELECT * FROM SP_servicio_acronis WHERE rut = '$Rut' AND alias = $Alias");
        if(mysql_num_rows($Validar)>0){
         echo 1;
        }
@@ -55,16 +55,9 @@ class Servicios{
                 break;
                 
            case 4:
-                if (mysql_num_rows($Query)>1){
-                    $ResponseArray = array('Servicio'=> $Servicio ,'Response' => 2,'Enlaces'=> $Enlaces);
-                    echo json_encode($ResponseArray);
-
-                } 
-                else{
-                    $ResponseArray = array('Servicio'=> $Servicio ,'Response' => 1,'Enlaces'=> $Enlaces);
-                    echo json_encode($ResponseArray);
-                }
-                break;     
+                $ResponseArray = array('Servicio'=> $Servicio ,'Response' => 2,'Enlaces'=> $Enlaces);
+                echo json_encode($ResponseArray);
+                break;    
         }
     }	
 }
