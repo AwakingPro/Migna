@@ -85,7 +85,14 @@ $(document).ready(function(){
                             inputOptions: En,
                             callback: function (result) {
                                 console.log(result);
-                                window.location.href = 'clientes_ingreso_voip.php?cliente='+Cliente+'&alias='+result; 
+                               
+                                if(result == null){
+                                    return;
+                                }
+                                else{
+                                    window.location.href = 'clientes_ingreso_voip.php?cliente='+Cliente+'&alias='+result; 
+
+                                }
                             }
                         });
                         break;
@@ -96,7 +103,14 @@ $(document).ready(function(){
                             inputOptions: En,
                             callback: function (result) {
                                 console.log(result);
-                                window.location.href = 'clientes_ingreso_otros.php?cliente='+Cliente+'&alias='+result; 
+                                if(result == null){
+                                    return;
+                                }
+                                else{
+                                    window.location.href = 'clientes_ingreso_otros.php?cliente='+Cliente+'&alias='+result;
+
+                                }
+                                 
                             }
                         });
                         
@@ -109,7 +123,13 @@ $(document).ready(function(){
                                 inputOptions: En,
                                 callback: function (result) {
                                     console.log(result);
-                                    window.location.href = 'clientes_ingreso_acronis.php?cliente='+Cliente+'&alias='+result; 
+                                    if(result == null){
+                                        return;
+                                    }
+                                    else{
+                                       window.location.href = 'clientes_ingreso_acronis.php?cliente='+Cliente+'&alias='+result; 
+
+                                    }
                                 }
                             });
                         }
@@ -119,8 +139,12 @@ $(document).ready(function(){
                                 inputType: 'select',
                                 inputOptions: En,
                                 callback: function (result) {
-                                    console.log(result);
-                                    window.location.href = 'clientes_ingreso_acronis.php?cliente='+Cliente+'&alias='+result; 
+                                    if(result == null){
+                                        return;
+                                    }
+                                    else{
+                                        window.location.href = 'clientes_ingreso_acronis.php?cliente='+Cliente+'&alias='+result; 
+                                    }
                                 }
                             });
                         }
