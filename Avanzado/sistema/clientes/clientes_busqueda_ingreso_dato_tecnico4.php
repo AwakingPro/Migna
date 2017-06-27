@@ -3,8 +3,9 @@ include("../../../system/config.php");
 include("../../../services/config.php");
 
 $sql_nombre=mysql_query("SELECT cliente FROM SP_soporte_crear_cliente ORDER  BY cliente ASC");
-$sql_rut=mysql_query("SELECT rut FROM SP_soporte_crear_cliente ORDER  BY rut ASC");
-
+$sql_alias=mysql_query("SELECT rut FROM SP_soporte_crear_cliente ORDER  BY rut ASC");
+$cliente = $_GET["cliente"];
+$alias=mysql_query("SELECT alias FROM SP_dato_cliente WHERE cliente='$cliente' ORDER  BY alias ASC");
 
 //initialize the session
 if (!isset($_SESSION)) {
@@ -77,44 +78,181 @@ if (!((isset($_SESSION['MM_Username'])) && (isAuthorized("",$MM_authorizedUsers,
   header("Location: ". $MM_restrictGoTo);
   exit;
 }
-$cliente=$_SESSION['MM_Username'];
-$bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$cliente'");
+$cliente2=$_SESSION['MM_Username'];
+$bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$cliente2'");
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+
 <?php include '../../../include/estructura/title.php';?>
-<head>
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script type="text/javascript" src="../../../js/Servicios/Servicios.js"></script>
-  <script src="https://use.fontawesome.com/dd52e99da5.js"></script>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link href="../../../css/estilos.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+<link href="../../../css/estilos.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 265px;
+	height: 278px;
+	z-index: 1;
+	left: 7px;
+	top: 200px;
+	background-color: #B6D2F7;
+}
+#apDiv2 {
+	position: absolute;
+	width: 253px;
+	height: 150px;
+	z-index: 1;
+	left: 677px;
+	top: 24px;
+	background-color: #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	border: thin none #CCC;
+}
+</style>
+<style type="text/css">
+#apDiv3 {
+	position: absolute;
+	width: 270px;
+	height: 267px;
+	z-index: 1;
+	border: thin none #CCC;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #666;
+}
+#apDiv4 {
+	position: absolute;
+	width: 270px;
+	height: 267px;
+	z-index: 1;
+	left: 303px;
+	top: 244px;
+}
+</style>
+
+<link rel="stylesheet" href="../../../jquery/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+<script type="text/javascript" src="../../../jquery/js/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript" src=".././../jquery/js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery-ui.min.js"></script>
+    <script type='text/javascript' src='../../../javascript/jquery.autocomplete.js'></script>
+<link rel="stylesheet" type="text/css" href="../../../javascript/jquery.autocomplete.css" />
   <link href="../../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
   <link href="../../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
   <script src="../../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-    <style>
-      #datos_com{
-        height : 30px;
-      }
-      #supermenu{
-        height : 28px;
-      }
-      #top{
-        height : 100px;
-      }
-    </style>
-    
+  <script type="text/javascript" src="../../../script/jquery.js"></script>
+  <script type="text/javascript" src="../../../script/jquery.jCombo.min.js"></script>
+    <script src="../../../SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+    <script src="../../../SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<link href="../../../SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<link href="../../../SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="../../../css/estilos2.css">
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #F9F9F9;
+}
+</style>
+<script>
+$(function() {
+$( "#dialog" ).dialog();
+});
+</script>
+  <script type="text/javascript">
+$().ready(function() {
+	$("#course").autocomplete("busqueda_razon.php", {
+		width: 260,
+		matchContains: true,
+		//mustMatch: true,
+		//minChars: 0,
+		//multiple: true,
+		//highlight: false,
+		//multipleSeparator: ",",
+		selectFirst: false
+	});
+});
+$().ready(function() {
+	$("#course1").autocomplete("busqueda_rut.php", {
+		width: 260,
+		matchContains: true,
+		//mustMatch: true,
+		//minChars: 0,
+		//multiple: true,
+		//highlight: false,
+		//multipleSeparator: ",",
+		selectFirst: false
+	});
+});
+$().ready(function() {
+	$("#course3").autocomplete("busqueda_tipo.php", {
+		width: 260,
+		matchContains: true,
+		//mustMatch: true,
+		//minChars: 0,
+		//multiple: true,
+		//highlight: false,
+		//multipleSeparator: ",",
+		selectFirst: false
+	});
+});
+$().ready(function() {
+	$("#course4").autocomplete("busqueda_marca.php", {
+		width: 260,
+		matchContains: true,
+		//mustMatch: true,
+		//minChars: 0,
+		//multiple: true,
+		//highlight: false,
+		//multipleSeparator: ",",
+		selectFirst: false
+	});
+});
+$().ready(function() {
+	$("#course5").autocomplete("busqueda_modelo.php", {
+		width: 260,
+		matchContains: true,
+		//mustMatch: true,
+		//minChars: 0,
+		//multiple: true,
+		//highlight: false,
+		//multipleSeparator: ",",
+		selectFirst: false
+	});
+});
+$().ready(function() {
+	$("#course6").autocomplete("busqueda_proveedor.php", {
+		width: 260,
+		matchContains: true,
+		//mustMatch: true,
+		//minChars: 0,
+		//multiple: true,
+		//highlight: false,
+		//multipleSeparator: ",",
+		selectFirst: false
+	});
+});
+$().ready(function() {
+	$("#course7").autocomplete("busqueda_bodega.php", {
+		width: 260,
+		matchContains: true,
+		//mustMatch: true,
+		//minChars: 0,
+		//multiple: true,
+		//highlight: false,
+		//multipleSeparator: ",",
+		selectFirst: false
+	});
+});
+</script>
 </head>
 
 <body>
@@ -134,7 +272,6 @@ $bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$cliente'");
 	  }
 	  ?></div>
 
-
 <div id="Menu"> 
     <ul id="MenuBar1" class="MenuBarHorizontal">
       <li><a href="clientes.php" id="supermenu" >Cliente</a></li>
@@ -153,42 +290,39 @@ $bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$cliente'");
 
  <?php include '../../../include/estructura/submenu_clientes_busqueda_ingreso_dato_tecnico.php';?>
   <div id="busqueda_clientes">
-    <div id="datos_com"><strong>Asociar Servicio a Cliente</strong></div>
-		<br>
-		<div class="row">
-    <div class="col-sm-6">
-      <div class="form-group">
-        <label for="sel1"> Razón Social</label>
-        <select class="selectpicker form-control" data-live-search="true" id="Cliente">
-				<?php $QueryCliente = mysql_query("SELECT cliente FROM SP_soporte_crear_cliente");
-					while($row = mysql_fetch_array($QueryCliente)){
-						echo "<option>".utf8_encode($row[0])."</option>";
-					}
-				?>
-				</select>
-      </div> 
-    </div>
-    <div class="col-sm-3"> 
-      <div class="form-group">
-        <label for="sel1"> Servicio</label>
-        <select class="form-control" id="Servicio">
-          <option value="1">Servicios de Internet | Intranet </option>
-					<option value="2">Servicios de Telefonía IP </option>
-					<option value="3">Otros Servicios (Datacenter,VPN,Etc.)</option>
-					<option value="4">ACRONIS</option>
-        </select>
+    <div id="datos_com"><strong>Seleccione Enlace para Asociar Otros Servicios Contratados</strong><br />
+  <br /></div>
+   <p class="Nota">&nbsp;</p
+    ><FORM  autocomplete="off" ACTION="validacion_servicio4.php" METHOD="POST">
+      <table width="833" border="0">
+  <tr>
+    <td width="221" class="iconos_top"> Razón Social :</td>
+    <td width="602"><input name="cliente" type="text" class="formulario_grande_intranet" id="course"  value='<?php echo $cliente; ?>'size="60" /></td>
+  </tr>
+  <tr>
+    <td height="18">Seleccione Enlace de cliente : </td>
+    <td><select name="alias" class="formulario_chico_intranet" >
+    <?php
+     while($row=mysql_fetch_array($alias)){
+		 
+		 echo "<option value='$row[0]'>$row[0]</option>";
 
-      </div> 
-    </div>
-    <div class="col-sm-3">
-      <div class="form-group">
-          <label for="sel1">&nbsp;&nbsp; </label>
-        <button type="button" class="btn btn-primary col-sm-12" id="Validar">Ingresar</button>
-      </div> 
-    </div>
-  </div> 
-
-   <p class="Nota">Nota : Escriba las iniciales o coincidencia de caractéres en el campo de búsqueda.</p>
+       } ?>
+    </select></td>
+  </tr>
+  <tr>
+    <td height="18">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="18">&nbsp;</td>
+    <td><input type="submit" class="boton_intranet" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ingresar Registro&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" /></td>
+  </tr>
+  
+      </table>
+    </FORM>
+ 
+ 
  
   <?php
 	
@@ -225,17 +359,7 @@ $bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$cliente'");
 		}
 		else if ($ingresado==8){
 		
-		echo "<div id='dialog' title='Error'><p><center>Cliente ya cuenta con Servicio VOIP en este enlace<br><br><br>
-		   <form action='header.php' method='post'>
-		   	   <input type='hidden' name='id_header' value='5'>
-	   <input type='submit' value='cerrar'>
-	   </form></center></div>";
-		
-
-		}
-		else if ($ingresado==7){
-		
-		echo "<div id='dialog' title='Error'><p><center>Cliente ya cuenta con Otros Servicios en este enlace<br><br><br>
+		echo "<div id='dialog' title='Error'><p><center>Cliente ya cuenta con Servicio VOIP<br><br><br>
 		   <form action='header.php' method='post'>
 		   	   <input type='hidden' name='id_header' value='5'>
 	   <input type='submit' value='cerrar'>
@@ -258,4 +382,3 @@ var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../../SpryAssets/Sp
 </script>
 </body>
 </html>
-

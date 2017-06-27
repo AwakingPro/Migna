@@ -2,9 +2,28 @@
 include("../../../system/config.php");
 include("../../../services/config.php");
 
-$sql_nombre=mysql_query("SELECT cliente FROM SP_soporte_crear_cliente ORDER  BY cliente ASC");
-$sql_rut=mysql_query("SELECT rut FROM SP_soporte_crear_cliente ORDER  BY rut ASC");
+$cliente = $_GET["cliente"];
+$alias = $_GET["alias"];
 
+
+$NombreCliente;
+$Rut;
+$Contacto;
+$Telefon;
+$Correo;
+$Direccion;
+$QueryCliente = mysql_query("SELECT cliente,rut,contacto,telefonos,correos,direccion_comercial FROM SP_soporte_crear_cliente WHERE cliente='$cliente'");
+while($row = mysql_fetch_array($QueryCliente)){
+  $NombreCliente = $row[0];
+  $Rut = $row[1];
+  $Contacto  = $row[2];
+  $Telefono = $row[3];
+  $Correo = $row[4];
+  $Direccion = $row[5];
+}
+
+include("../../../system/config.php");
+include("../../../services/config.php");
 
 //initialize the session
 if (!isset($_SESSION)) {
@@ -77,15 +96,24 @@ if (!((isset($_SESSION['MM_Username'])) && (isAuthorized("",$MM_authorizedUsers,
   header("Location: ". $MM_restrictGoTo);
   exit;
 }
-$cliente=$_SESSION['MM_Username'];
-$bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$cliente'");
+$username2=$_SESSION['MM_Username'];
+$bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$username2'");
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 <?php include '../../../include/estructura/title.php';?>
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #F9F9F9;
+}
+</style>
+
 <head>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
@@ -98,8 +126,6 @@ $bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$cliente'");
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="../../../css/estilos.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
   <link href="../../../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
   <link href="../../../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
   <script src="../../../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
@@ -118,6 +144,7 @@ $bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$cliente'");
 </head>
 
 <body>
+
 <div id="body">
 <div id="top"><div id="inc_logo"></div><?php 
 	   $nombre=$_SESSION['MM_Username'];
@@ -150,112 +177,153 @@ $bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$cliente'");
       <li><a href="../pppoe/index.php">PPPoE</a></li>
     </ul>
   </div>
-
  <?php include '../../../include/estructura/submenu_clientes_busqueda_ingreso_dato_tecnico.php';?>
-  <div id="busqueda_clientes">
-    <div id="datos_com"><strong>Asociar Servicio a Cliente</strong></div>
-		<br>
-		<div class="row">
+ 
+  <div id="crear_dato_tecnico2">
+  <div id="datos_com"><strong>Datos Comerciales</strong></div>
+
+  <div class="row">
     <div class="col-sm-6">
       <div class="form-group">
         <label for="sel1"> Razón Social</label>
-        <select class="selectpicker form-control" data-live-search="true" id="Cliente">
-				<?php $QueryCliente = mysql_query("SELECT cliente FROM SP_soporte_crear_cliente");
-					while($row = mysql_fetch_array($QueryCliente)){
-						echo "<option>".utf8_encode($row[0])."</option>";
-					}
-				?>
-				</select>
+        <input type="text" class="form-control" id="Cliente" disabled value="<?php echo $NombreCliente; ?>">
       </div> 
     </div>
     <div class="col-sm-3"> 
       <div class="form-group">
-        <label for="sel1"> Servicio</label>
-        <select class="form-control" id="Servicio">
-          <option value="1">Servicios de Internet | Intranet </option>
-					<option value="2">Servicios de Telefonía IP </option>
-					<option value="3">Otros Servicios (Datacenter,VPN,Etc.)</option>
-					<option value="4">ACRONIS</option>
-        </select>
+        <label for="sel1"> Rut</label>
+        <input type="text" class="form-control" id="Rut" disabled value="<?php echo $Rut; ?>">
 
       </div> 
     </div>
     <div class="col-sm-3">
       <div class="form-group">
-          <label for="sel1">&nbsp;&nbsp; </label>
-        <button type="button" class="btn btn-primary col-sm-12" id="Validar">Ingresar</button>
+          <label for="sel1">Contacto</label>
+          <input type="text" class="form-control"  disabled value="<?php echo $Contacto; ?>">
       </div> 
     </div>
   </div> 
 
-   <p class="Nota">Nota : Escriba las iniciales o coincidencia de caractéres en el campo de búsqueda.</p>
- 
-  <?php
-	
-	$ingresado= $_GET["id"];
-	if ($ingresado==1){
-		
-		echo "<div id='dialog' title='Error'><p><center>No se encuentra Registro.<br><br><br>
-		   <form action='header.php' method='post'>
-		   	   <input type='hidden' name='id_header' value='5'>
-	   <input type='submit' value='cerrar'>
-	   </form></center></div>";
-		
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label for="sel1">Correos</label>
+        <input type="text" class="form-control" disabled value="<?php echo $Correo; ?>">
+      </div> 
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label for="Contrato"> Teléfonos</label>
+        <input type="text" class="form-control" disabled value="<?php echo $Telefono; ?>">
+      </div>
+    </div>
+    <div class="col-sm-6"> 
+      <div class="form-group">
+        <label for="sel1"> Dirección Comercial</label>
+        <input type="text" class="form-control" disabled value="<?php echo $Direccion ?>">
+      </div> 
+    </div>
+  </div> 
+  
+  <div id="datos_com"><strong>Datos Servicio</strong> <strong>ACRONIS</strong></div>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label for="sel1"><i class="fa fa-cloud-upload "></i> Nube</label>
+        <select class="form-control" id="Nube">
+          <option>Netland</option>
+          <option>Acronis</option>
+        </select>
+      </div> 
+    </div>
+    <div class="col-sm-3"> 
+      <div class="form-group">
+        <label for="sel1"><i class="fa fa-database "></i> Plan</label>
+        <select class="form-control" id="Plan">
+          <option>4.167 GB</option>
+          <option>22.222 GB</option>
+          <option>50.000 GB</option>
+          <option>114.286 GB</option>
+        </select>
+      </div> 
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+          <label for="sel1"><i class="fa fa-cogs "></i> Administración</label>
+          <select class="form-control" id="Administracion">
+            <option>Netland</option>
+            <option>Cliente</option>
+          </select>
+        </div> 
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label for="Contrato"><i class="fa fa-legal "></i> Número Contrato</label>
+        <input type="text" class="form-control" id="Contrato">
+      </div>
+    </div>
+  </div> 
 
-		}
-	else if ($ingresado==10){
-		
-		echo "<div id='dialog' title='Error'><p><center>Se debe ingresar Dato Técnico de Internet primero<br><br><br>
-		   <form action='header.php' method='post'>
-		   	   <input type='hidden' name='id_header' value='5'>
-	   <input type='submit' value='cerrar'>
-	   </form></center></div>";
-		
-
-		}
-		else if ($ingresado==9){
-		
-		echo "<div id='dialog' title='Registro VOIP'><p><center>Registro Ingresado Exitosamente<br><br><br>
-		   <form action='header.php' method='post'>
-		   	   <input type='hidden' name='id_header' value='5'>
-	   <input type='submit' value='cerrar'>
-	   </form></center></div>";
-		
-
-		}
-		else if ($ingresado==8){
-		
-		echo "<div id='dialog' title='Error'><p><center>Cliente ya cuenta con Servicio VOIP en este enlace<br><br><br>
-		   <form action='header.php' method='post'>
-		   	   <input type='hidden' name='id_header' value='5'>
-	   <input type='submit' value='cerrar'>
-	   </form></center></div>";
-		
-
-		}
-		else if ($ingresado==7){
-		
-		echo "<div id='dialog' title='Error'><p><center>Cliente ya cuenta con Otros Servicios en este enlace<br><br><br>
-		   <form action='header.php' method='post'>
-		   	   <input type='hidden' name='id_header' value='5'>
-	   <input type='submit' value='cerrar'>
-	   </form></center></div>";
-		
-
-		}
-	
-	?>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="form-group">
+        <div class="form-group">
+        <label for="Fecha"><i class="fa fa-calendar "></i> Fecha Contrato</label>
+        <input type="text" class="form-control" id="Fecha">
+      </div>
+      </div> 
+    </div>
+    <div class="col-sm-3"> 
+      <div class="form-group">
+        <label for="sel1"><i class="fa fa-user "></i> Tipo Contrato</label>
+        <select class="form-control" id="Tipo">
+          <option>Cliente</option>
+          <option>Agente</option>
+          <option>Distribuidor</option>
+        </select>
+      </div> 
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label for="sel1">&nbsp;&nbsp; </label>
+        <button type="button" class="btn btn-primary col-sm-12" id="Guardar">Guardar</button>
+      </div> 
+    </div>
+    <div class="col-sm-3">
+    </div>
   </div>
-   <div id="extension"></div><div id="extension"></div>
+ 
+    <input type="hidden" value="<?php echo $alias;?>" name="alias" id="Alias"/>
+  <?php
+	  $id=$_GET['id']; 
+	  if ($id==1){
+	  echo "<div id='dialog' title='Ingresar Dato Técnico'><center><p>Registro ingresado Exitosamente!<br><br><br>
+		   <form action='header.php' method='post'>
+		   	   <input type='hidden' name='id_header' value='7'>
+		   	   		   	   <input type='hidden' name='cliente' value='$cliente'>
 
-</div>
-  
-  
+	   <input type='submit' value='cerrar'>
+	   </form></center></div>";
+	  }
+	  
+	  else if ($id==10){
+	  echo "<div id='dialog' title='Error'><center><P>Nombre de Enlace duplicado, no se puede ingresar registro a la Base de Datos, intente con otro nombre para el Enlace.<br><br><br>
+		   <form action='header.php' method='post'>
+		   	   <input type='hidden' name='id_header' value='7'>
+		   	   		   	   <input type='hidden' name='cliente' value='$cliente'>
+
+	   <input type='submit' value='cerrar'>
+	   </form></center></div>";
+	  }
+	  ?>
+      <br />
+      <br />
 </div>
 
-<script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../../SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
+  </div>
+ 
+
+
 </body>
 </html>
-

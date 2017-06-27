@@ -43,6 +43,15 @@ else
                  header("Location: clientes_busqueda_ingreso_dato_tecnico.php?id=10");    
            }
 	    }
+        else if ($servicio=='4' ){
+               $sql=mysql_query("SELECT cliente FROM SP_dato_cliente WHERE cliente='$cliente'  ");
+				 if (mysql_num_rows($sql)>0)
+          {
+             header("Location: clientes_busqueda_ingreso_dato_tecnico4.php?cliente=$cliente");
+             } else if(mysql_num_rows($sql)==0){
+                 header("Location: clientes_busqueda_ingreso_dato_tecnico.php?id=10");    
+           }
+	    }
 	}
 
 ?>

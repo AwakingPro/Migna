@@ -1,7 +1,7 @@
 <?php
 include("../../../system/config.php");
- include("../../../mail/class.phpmailer.php");
-    include("../../../mail/class.smtp.php");
+include("../../../mail/class.phpmailer.php");
+include("../../../mail/class.smtp.php");
 
 $cliente3= $_POST["cliente"];
 $cliente= trim($cliente3);
