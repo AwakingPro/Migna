@@ -136,6 +136,10 @@ body.loading .modal
  #divtablamed {
     width: 600px;
     }
+.text-sm {
+    font-size: .7em;
+}
+
 
     </style>
     <script>
@@ -155,7 +159,7 @@ body.loading .modal
       <div class="boxed">
         <!--CONTENT CONTAINER-->
         <!--===================================================-->
-        <div id="content-container">
+        <div id="content">
           <!--Page Title-->
           <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <div id="page-title">
