@@ -17,6 +17,9 @@ mysql_select_db('SPOTMANAGER',$Decreto7);
 $Decreto8=mysql_connect('172.16.9.8','root','m9a7r5s3'); 
 mysql_select_db('SPOTMANAGER',$Decreto8);
 
+$Decreto9=mysql_connect('172.16.9.9','root','m9a7r5s3'); 
+mysql_select_db('SPOTMANAGER',$Decreto9);
+
 $array1 = "200,201,194,195,154,155,157,156,44,48,47,43,181,182,183,184";
 $array2 = "110,111,109,113,128,117,127,102,103,119,118,121,55,54,52,51";
 $array3 = "149,147,145,148,82,81,72,73,46,45,50,49,177,79,180,176";
@@ -39,7 +42,7 @@ $array19 = "43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58";
 $array20 = "59,60,61,62,63,64,65,66,67,68,69";
 $array21 = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16";
 $array22 = "20,21,25,26,30,31,32";
-
+$array23 = "1,2,3,4,5,6,7,8";
 
 
 
@@ -87,6 +90,7 @@ $QueryDecreto7_2 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspo
 $QueryDecreto7_3 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspot WHERE id_hotspot IN ($array20)",$Decreto7);
 $QueryDecreto8_1 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspot WHERE id_hotspot IN ($array21)",$Decreto8);
 $QueryDecreto8_2 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspot WHERE id_hotspot IN ($array22)",$Decreto8);
+$QueryDecreto9_1 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspot WHERE id_hotspot IN ($array23)",$Decreto9);
 
 
 
@@ -590,6 +594,23 @@ body.loading .modal
                                         echo "</tr>";
                                         echo "<tr>";
                                         echo "<td><b>Decreto 51 Cultural</b></td>";
+                                        echo "</tr>";
+                                        echo "<tr>";
+                                            while($row=mysql_fetch_array($QueryDecreto9_1)){
+                                                $Comuna = $row[0];
+                                                $Localidad  =$row[1];
+                                                $Status = $row[2];
+                                                $Ip = $row[3];
+                                                $Class = '';
+                                                if($Status == 0){
+                                                    $Class = "class='bg-danger'";
+                                                }
+                                                else{
+                                                    $Class = "class='bg-success'";
+                                                }
+                                                echo "<td $Class><span class='text-sm'><a class='btn-link add-tooltip' data-toggle='tooltip' href='#' data-original-title='$Localidad  $Ip'><center>".substr($Comuna, 0, 8)."</center></a></span></td>";
+                                                
+                                            }
                                         echo "</tr>";
                                         
                                         

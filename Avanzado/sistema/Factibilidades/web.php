@@ -1,6 +1,5 @@
 <?php
 include("../../../system/config.php");
-include("../../../system/config3.php");
 include("../../../services/config.php");
 
 $ticket_filter=$_GET['ticket_filter'];
@@ -116,11 +115,7 @@ $bienvenido=mysql_query("SELECT nombre FROM usuarios WHERE usuario='$usuario'");
 <link href="../../../data/media/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
 <script language="javascript">
 $(document).ready(function() {
-    $('#example').dataTable(
- 	{
-        "order": [[ 10, "asc" ]]
-    	}
-);
+    $('#example').dataTable();
 } );
 </script>
 <script language="javascript">
@@ -236,7 +231,7 @@ body {
  <?php include '../../../include/estructura/submenu_factibilidades_pendientes.php';?>
  
   <div id="ticket_resultado3">
-    <div id="datos_com"><strong>Solicitudes a Traves de la Pagina Web</strong><span class="right_1"><a href="reporteexcependientes.php"></a></span><br />
+    <div id="datos_com"><strong>Solicitudes Sin Agendar</strong><span class="right_1"><a href="reporteexcependientes.php"></a></span><br />
       <br />
   </div>
      <?php
@@ -271,17 +266,16 @@ body {
             <tr>
                
               
-                <th>Nombre</th>
-                <th>Email</th>
-                <th>Teléfono</th>
-                <th>Region</th>
+                <th>Cliente</th>
+                <th>Prioridad</th>
+                <th>Comuna</th>
+                <th>Ticket</th>
 
-                <th>V</th>
-                <th>RM</th>
-                <th>VI</th>
-                <th>VII</th>
-                <th>Como</th>
-                <th>Fecha</th>
+                <th>Fecha Creación</th>
+                <th>Asignado A :</th>
+                <th>Origen</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
 
 
  
@@ -290,73 +284,34 @@ body {
  
    
          <tr>
-        <?php 
-$array1= array();
-$array2= array();
-$array3= array();
-$array4= array();
-$array5= array();
-$array6= array();
-$array7= array();
-$array8= array();
-$array9= array();
-$array10= array();
-$sql1=mysql_query("SELECT field_value FROM  wp_cf7dbplugin_submits WHERE field_name='nombre'");
-$sql2=mysql_query("SELECT field_value FROM  wp_cf7dbplugin_submits WHERE field_name='email'");
-$sql3=mysql_query("SELECT field_value FROM  wp_cf7dbplugin_submits WHERE field_name='telefono'");
-$sql4=mysql_query("SELECT field_value FROM  wp_cf7dbplugin_submits WHERE field_name='region'");
-$sql5=mysql_query("SELECT field_value FROM  wp_cf7dbplugin_submits WHERE field_name='com-quinta'");
-$sql6=mysql_query("SELECT field_value FROM  wp_cf7dbplugin_submits WHERE field_name='com-metro'");
-$sql7=mysql_query("SELECT field_value FROM  wp_cf7dbplugin_submits WHERE field_name='com-sexta");
-$sql8=mysql_query("SELECT field_value FROM  wp_cf7dbplugin_submits WHERE field_name='com-septima'");
-$sql9=mysql_query("SELECT field_value FROM  wp_cf7dbplugin_submits WHERE field_name='como'");
-$sql10=mysql_query("SELECT submit_time FROM  wp_cf7dbplugin_submits WHERE field_name='nombre'");
-while($row = mysql_fetch_array($sql1)){
-    $array1[] = $row[0];
-}
-while($row = mysql_fetch_array($sql2)){
-    $array2[] = $row[0];
-}
-while($row = mysql_fetch_array($sql3)){
-    $array3[] = $row[0];
-}
-while($row = mysql_fetch_array($sql4)){
-    $array4[] = $row[0];
-}
-while($row = mysql_fetch_array($sql5)){
-    $array5[] = $row[0];
-}
-while($row = mysql_fetch_array($sql6)){
-    $array6[] = $row[0];
-}
-while($row = mysql_fetch_array($sql7)){
-    $array7[] = $row[0];
-}
-while($row = mysql_fetch_array($sql8)){
-    $array8[] = $row[0];
-}
-while($row = mysql_fetch_array($sql9)){
-    $array9[] = $row[0];
-}
-while($row = mysql_fetch_array($sql10)){
-    $array10[] = $row[0];
-}
- $array1_lenght=count($array1);
-$i=0;
-while($i<$array1_lenght){ ?>
-	
-<td><?php  echo utf8_encode($array1[$i]); ?> </td> 
-<td><?php  echo utf8_encode($array2[$i]); ?> </td> 
-<td><?php  echo utf8_encode($array3[$i]); ?> </td> 
-<td><?php  echo utf8_encode($array4[$i]); ?> </td> 
-<td><?php  echo utf8_encode($array5[$i]); ?> </td> 
-<td><?php  echo utf8_encode($array6[$i]); ?> </td> 
-<td><?php  echo utf8_encode($array7[$i]); ?> </td> 
-<td><?php  echo utf8_encode($array8[$i]); ?> </td> 
-<td><?php  echo utf8_encode($array9[$i]); ?> </td> 
-<td><?php  echo date('d/m/Y', $array10[$i]); ?> </td>
-</tr><?php $i++; } ?> </tbody>
+        <?php $ticket=mysql_query("SELECT * FROM TICKET WHERE origen = 'WEB'");
+
+while ($row = mysql_fetch_row($ticket)){
+	 $flag=$row[10];
+	?>
+                          <td><?php echo utf8_encode($row[1])." "; ?> </td>
+                          <td><center><?php 
+						  if ($flag=="Alta"){ echo " <img src='../../../imagenes/17x19flag1.png' />"; }
+						  elseif ($flag=="Media"){ echo " <img src='../../../imagenes/17x19flag2.png' />"; }	
+						  	elseif ($flag=="Normal"){ echo " <img src='../../../imagenes/17x19flag3.png' />"; }				  
+			              elseif ($flag=="" || $flag=="Baja" ){ echo "-"; }						  
+?>
+                           </center></td>
+                          <td><?php echo utf8_encode($row[27]);?></td>
+                          <td><?php echo utf8_encode($row[13]);?></td>
+
+                          <td><?php echo utf8_encode($row[8]);?></td>
+                          <td><?php echo utf8_encode($row[11]);?></td>
+                          <td><?php echo utf8_encode($row[2]);?></td>
+                          <td><a class='link' href='comprobacion_editar.php?cliente=<?php echo $row[1];?>&numero=<?php echo $row[13];?>&factibilidad=<?php echo $row[5]; ?>'><center><img src='../../../imagenes/editar.jpg' /></center></a></td>
+                          <td><a   href='comprobacion_eliminar.php?cliente=<?php echo $row[1]; ?>&numero=<?php echo $row[13]; ?>&ticket_filter=<?php echo $ticket_filter; ?>'><center><img src='../../../imagenes/eliminar.png' /></center></a></td>
+                      
+
+        </tr><?php } ?> </tbody>
   </table>
+
+   
+ 
   </div>
 </div>
   

@@ -273,6 +273,7 @@ body {
 
                 <th>Fecha Creación</th>
                 <th>Asignado A :</th>
+                <th>Origen</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
 
@@ -288,7 +289,7 @@ body {
 while ($row = mysql_fetch_row($ticket)){
 	 $flag=$row[10];
 	?>
-                          <td><?php echo $row[1]." "; ?> </td>
+                          <td><?php echo utf8_encode($row[1])." "; ?> </td>
                           <td><center><?php 
 						  if ($flag=="Alta"){ echo " <img src='../../../imagenes/17x19flag1.png' />"; }
 						  elseif ($flag=="Media"){ echo " <img src='../../../imagenes/17x19flag2.png' />"; }	
@@ -296,11 +297,12 @@ while ($row = mysql_fetch_row($ticket)){
 			              elseif ($flag=="" || $flag=="Baja" ){ echo "-"; }						  
 ?>
                            </center></td>
-                          <td><?php echo $row[27];?></td>
-                          <td><?php echo $row[13];?></td>
+                          <td><?php echo utf8_encode($row[27]);?></td>
+                          <td><?php echo utf8_encode($row[13]);?></td>
 
-                          <td><?php echo $row[8];?></td>
-                          <td><?php echo $row[11];?></td>
+                          <td><?php echo utf8_encode($row[8]);?></td>
+                          <td><?php echo utf8_encode($row[11]);?></td>
+                          <td><?php echo utf8_encode($row[2]);?></td>
                           <td><a class='link' href='comprobacion_editar.php?cliente=<?php echo $row[1];?>&numero=<?php echo $row[13];?>&factibilidad=<?php echo $row[5]; ?>'><center><img src='../../../imagenes/editar.jpg' /></center></a></td>
                           <td><a   href='comprobacion_eliminar.php?cliente=<?php echo $row[1]; ?>&numero=<?php echo $row[13]; ?>&ticket_filter=<?php echo $ticket_filter; ?>'><center><img src='../../../imagenes/eliminar.png' /></center></a></td>
                       
