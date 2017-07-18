@@ -30,16 +30,17 @@ $array7 = "106,105,100,99,198,192,197,199,161,162,163,164,151,150,146,144";
 $array8 = "178,170,175,173,159,169,160,158,120,116,115,114,140,85,84,83";
 $array9 = "86,97,101,141,94,137,138,139,69,80,70,79,142,153,152,143";
 $array10 = "96,92,93,95,108,107,104,112";
-$array11 = "1,2,3,6,7,8,11,12,13";
+$array11 = "1,2,3,6,7,8,11,12,13,14,15,16,17,18,19,20"; 
+$array24 = "21,22,23,24,25,26,27,28,29,30,31,32,33,34";//16
 $array12 = "9,10,11,12,13,17,18,19,24,25,26,27,33,34,35,36";
 $array13 = "37,38,39,40,41,42,43,44,47,48,49,50,51,52,53,54";
 $array14 = "55,56,57,58,59,60,61,62,67,68,69,70";
 $array15 = "1,2,3,4,5,6,7,8,14,15,16,28,29,30,31,32";
 $array16 = "33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48";
-$array17 = "49,50,51,52,53,54,55,56";
+$array17 = "49,50,51,52,53,54,55,56,57,58,59,60";
 $array18 = "20,21,22,23,29,30,31,32,35,36,37,38,39,40,41,42";
 $array19 = "43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58";
-$array20 = "59,60,61,62,63,64,65,66,67,68,69";
+$array20 = "59,60,61,62,63,64,65";
 $array21 = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16";
 $array22 = "20,21,25,26,30,31,32";
 $array23 = "1,2,3,4,5,6,7,8";
@@ -79,6 +80,7 @@ $QueryDecreto69_8 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotsp
 $QueryDecreto69_9 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspot WHERE id_hotspot IN ($array9)",$Decreto69);
 $QueryDecreto69_10 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspot WHERE id_hotspot IN ($array10)",$Decreto69);
 $QueryDecreto4_1 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspot WHERE id_hotspot IN ($array11)",$Decreto4);
+$QueryDecreto4_2 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspot WHERE id_hotspot IN ($array24)",$Decreto4);
 $QueryDecreto5_1 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspot WHERE id_hotspot IN ($array12)",$Decreto5);
 $QueryDecreto5_2 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspot WHERE id_hotspot IN ($array13)",$Decreto5);
 $QueryDecreto5_3 = mysql_query("SELECT comuna,id_localidad,status,ip FROM hotspot WHERE id_hotspot IN ($array14)",$Decreto5);
@@ -370,6 +372,24 @@ body.loading .modal
                                         echo "</tr>";
                                         echo "<tr>";
                                             while($row=mysql_fetch_array($QueryDecreto4_1)){
+                                                $Comuna = $row[0];
+                                                $Localidad  =$row[1];
+                                                $Status = $row[2];
+                                                $Ip = $row[3];
+                                                $Class = '';
+                                                if($Status == 0){
+                                                    $Class = "class='bg-danger'";
+                                                }
+                                                else{
+                                                    $Class = "class='bg-success'";
+                                                }
+                                                echo "<td $Class><span class='text-sm'><a class='btn-link add-tooltip' data-toggle='tooltip' href='#' data-original-title='$Localidad  $Ip'><center>".substr($Comuna, 0, 8)."</center></a></span></td>";
+                                                
+                                            }
+
+                                        echo "</tr>";
+                                         echo "<tr>";
+                                            while($row=mysql_fetch_array($QueryDecreto4_2)){
                                                 $Comuna = $row[0];
                                                 $Localidad  =$row[1];
                                                 $Status = $row[2];
