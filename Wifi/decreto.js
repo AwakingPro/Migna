@@ -1,8 +1,9 @@
 $(document).ready(function() {
     $(".Decreto").click(function() {
+        $('body').addClass("loading");
         var Decreto = $(this).attr("id");
         var data = 'decreto='+Decreto;
-        alert(data);
+        
         $.ajax({
             type: "POST",
             url: "decreto.php",
@@ -10,6 +11,7 @@ $(document).ready(function() {
             dataType: 'html',
             success: function(response){
                 $('#data').html(response);
+                $('body').removeClass("loading");
             }
         });
      });
