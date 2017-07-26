@@ -9,6 +9,21 @@ switch($Data){
     case 51:
     $Host = "172.16.9.9";
     break;
+    case 33:
+    $Host = "172.16.9.4";
+    break;
+    case 37:
+    $Host = "172.16.9.8";
+    break;
+    case 171:
+    $Host = "172.16.9.5";
+    break;
+    case 172:
+    $Host = "172.16.9.6";
+    break;
+    case 173:
+    $Host = "172.16.9.7";
+    break;
 
 }
 $ConFoco=mysql_connect("$Host","root","m9a7r5s3"); 
@@ -42,8 +57,9 @@ while($row = mysql_fetch_array($SqlAP)){
     echo "<td><span class='text'>".$CodigoAp."</span></td>";
     $i = 1;
     while($i<=$DiasFinal){
-        $FechaSesion = $Anio."-".$Mes."-0".$i;
-        $SqlRecords = mysql_num_rows(mysql_query("SELECT codigo_ap FROM mac_usuarios_reportes WHERE codigo_ap = '$CodigoAp' AND fecha_inicio_sesion2 = '$FechaSesion'",$ConFoco));
+        $FechaSesion = $Anio."-".$Mes."-".$i;
+        $q = "SELECT codigo_ap FROM mac_usuarios_reportes WHERE codigo_ap = '$CodigoAp' AND fecha_inicio_sesion2 = '$FechaSesion'";
+        $SqlRecords = mysql_num_rows(mysql_query($q,$ConFoco));
         if($SqlRecords==0){
             $class = 'bgcolor="red"';
         }else{
