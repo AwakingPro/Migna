@@ -274,7 +274,7 @@ body {
  
    
          <tr>
-        <?php $ticket=mysql_query("SELECT * FROM TICKET WHERE status='Abierto'  AND subtipo='Factibilidad' AND resultado='Pendiente' and not estado_factibilidad='En Espera' and not estado_factibilidad='Por Instalar' and not origen = 'WEB'");
+        <?php $ticket=mysql_query("SELECT * FROM TICKET WHERE status='Abierto'  AND subtipo='Factibilidad' AND resultado='Pendiente' and not estado_factibilidad='En Espera' and not estado_factibilidad='Por Instalar' and not (origen = 'WEB' and Agendamiento !=1) ");
 
 while ($row = mysql_fetch_row($ticket)){
 	 $flag=$row[10];

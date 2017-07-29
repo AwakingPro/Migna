@@ -373,26 +373,26 @@ while ($row = mysql_fetch_row($sql_historial)){?>
     </tr>
   <tr><?php while($row = mysql_fetch_array($sql_editar)){ ?>
     <td><span class="style1 style2">Rut</span></td>
-    <td colspan="2"><input type="text" name="creador" readonly="readonly" value="<?php echo $row['rut'];?>" class="formulario_grande_intranet" /></td>
+    <td colspan="2"><input type="text" name="RutCliente"  value="<?php echo $row['rut'];?>" class="formulario_grande_intranet" /></td>
     </tr>
-  <tr><input type="hidden" name="numero" readonly="readonly" value="<?php echo $row['numero'];?>" class="EDITARCopiaCopia2" />
+  <tr><input type="hidden" name="numero"  value="<?php echo $row['numero'];?>" class="EDITARCopiaCopia2" />
     <td><span class="style1 style2">Correo</span></td>
-    <td colspan="2"><input type="text" name="origen" readonly="readonly" value="<?php echo $row['correo'];?>" class="formulario_grande_intranet">
+    <td colspan="2"><input type="text" name="Correo"  value="<?php echo $row['correo'];?>" class="formulario_grande_intranet">
       
       
     </td>
     </tr>
   <tr>
     <td>Plan</td>
-    <td colspan="2"><input type="text" name="depto" readonly="readonly" value="<?php echo $row['plan'];?>" class="formulario_grande_intranet"></td>
+    <td colspan="2"><input type="text" name="Plan"  value="<?php echo $row['plan'];?>" class="formulario_grande_intranet"></td>
     </tr><input name="usuario" readonly="readonly" type="hidden" class="EDITARCopiaCopia2" value="<?php echo $usuario;?>" size="60">
   <tr>
     <td><span class="style1 style2">Telefono</span></td>
-    <td colspan="2"><input name="tipo" type="text" readonly="readonly" class="formulario_grande_intranet" value="<?php echo $row['telefono'];?>" size="60"></td>
+    <td colspan="2"><input name="Telefono" type="text"  class="formulario_grande_intranet" value="<?php echo $row['telefono'];?>" size="60"></td>
     </tr>
   <tr>
     <td><span class="style1 style2">Dirección</span></td>
-    <td colspan="2"><input name="subtipo" readonly="readonly" type="text" class="formulario_grande_intranet" value="<?php echo $row['direccion'];?>" size="60"></td>
+    <td colspan="2"><input name="Direccion"  type="text" class="formulario_grande_intranet" value="<?php echo $row['direccion'];?>" size="60"></td>
   </tr>
   <tr>
     <td>Comuna</td>
@@ -458,6 +458,16 @@ while ($row = mysql_fetch_row($sql_historial)){?>
         <?php } ?>
         </option>
       </select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Pasar a Agendamiento :</td>
+    <td>
+      <select name="Agendamiento" class="formulario_grande_intranet2" >
+        <option value = '0'>No</option>
+        <option value = '1'>Si</option>
+      </select>
+    </td>
     <td>&nbsp;</td>
   </tr>
   <tr>

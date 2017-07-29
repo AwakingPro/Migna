@@ -6,10 +6,10 @@
     <a href="ticket_nuevo_factibilidad.php" title="Ingresar Nueva Solicitud de Instalacion" class="Menu">Crear</a></td>
     <td width="140" class="Sub_menu">
     <a href="sin_agendar.php" title="Instalaciones pendientes de asignacion a Terreno" class="Menu">Sin Agendar
-<?php $sql = "SELECT COUNT(*) FROM TICKET  WHERE status='Abierto'  AND subtipo='Factibilidad' AND resultado='Pendiente' and not estado_factibilidad='En Espera' and not estado_factibilidad='Por Instalar'  ";
+<?php $sql = "SELECT COUNT(*) FROM TICKET  WHERE status='Abierto'  AND subtipo='Factibilidad' AND resultado='Pendiente' and not estado_factibilidad='En Espera' and not estado_factibilidad='Por Instalar' and not (origen = 'WEB' and Agendamiento !=1)  ";
 $resultado = mysql_query($sql);
 
-$select=mysql_query("SELECT * FROM TICKET WHERE status='Abierto'  AND subtipo='Factibilidad' AND resultado='Pendiente' and not estado_factibilidad='En Espera' and not estado_factibilidad='Por Instalar'");
+$select=mysql_query("SELECT * FROM TICKET WHERE status='Abierto'  AND subtipo='Factibilidad' AND resultado='Pendiente' and not estado_factibilidad='En Espera' and not estado_factibilidad='Por Instalar' and not (origen = 'WEB' and Agendamiento !=1)");
 if (mysql_num_rows($select)>0){
  $row = mysql_fetch_array($resultado);
  echo "("; echo $row[0]; echo ")"; }

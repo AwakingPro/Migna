@@ -1,6 +1,6 @@
 <?php
-include("../../../system/config.php");
-include("../../../services/config.php");
+include("../system/config.php");
+include("../services/config.php");
 $Sql = mysql_query("SELECT numero,id FROM TICKET numero=0 ");
 $Ticket = 0;
 while($Record = mysql_fetch_array($Sql)){

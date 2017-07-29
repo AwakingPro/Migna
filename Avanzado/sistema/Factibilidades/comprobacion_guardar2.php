@@ -26,6 +26,12 @@ $seguimiento=$_POST['seguimiento'];
 
 $comuna=$_POST['comuna']; 
 
+$Telefono=$_POST['Telefono']; 
+$Correo=$_POST['Correo']; 
+$Direccion=$_POST['Direccion']; 
+$RutCliente=$_POST['RutCliente']; 
+$Plan=$_POST['Plan']; 
+$Agendamiento = $_POST['Agendamiento'];
 
 $sql_editar=mysql_query("SELECT * FROM TICKET WHERE numero='$numero' and cliente='$cliente'");
 
@@ -34,7 +40,7 @@ if (mysql_num_rows($sql_editar)>0)
 	
 header("Location: editar_registro.php?id=1&cliente=$cliente&numero=$numero&factibilidad=Factibilidad");
  $sql7=mysql_query("UPDATE TICKET	 
-SET   prioridad=	'$prioridad',asignar=	'$asignar',status=	'$status' ,fecha_actualizacion=	'$fecha_actualizacion',   resultado=	'$resultado',   estado_factibilidad=	'$seguimiento',comuna='$comuna' WHERE numero='$numero' and cliente='$cliente'");
+SET   prioridad=	'$prioridad',asignar=	'$asignar',status=	'$status' ,fecha_actualizacion=	'$fecha_actualizacion',   resultado=	'$resultado',   estado_factibilidad=	'$seguimiento',comuna='$comuna',rut = '$RutCliente',correo= '$Correo',direccion= '$Direccion',telefono='$Telefono',plan='$Plan',agendamiento = '$Agendamiento' WHERE numero='$numero' and cliente='$cliente'");
 
 $sql8=mysql_query("INSERT INTO TICKET_comentario_interno(actualizacion,usuario,comentario_interno,cliente,numero) values ('$actualizacion','$usuario','$comentario_interno','$cliente','$numero')");
  
