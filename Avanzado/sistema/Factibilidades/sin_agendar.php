@@ -10,16 +10,6 @@ $contados = mysql_result($resultado_contar,0,'COUNT'); //Aqui haces referencia a
 
 //mysql_reuslt(variable_donde_regresa_la_consulta,numero_del_renglon_o_fila,nombre_campo) 
 
-
-
-
-
-
-
-
-
-
-
 $numero = $_GET["numero"];
 $cliente = $_GET["cliente"];
 
@@ -284,7 +274,7 @@ body {
  
    
          <tr>
-        <?php $ticket=mysql_query("SELECT * FROM TICKET WHERE status='Abierto'  AND subtipo='Factibilidad' AND resultado='Pendiente' and not estado_factibilidad='En Espera' and not estado_factibilidad='Por Instalar'");
+        <?php $ticket=mysql_query("SELECT * FROM TICKET WHERE status='Abierto'  AND subtipo='Factibilidad' AND resultado='Pendiente' and not estado_factibilidad='En Espera' and not estado_factibilidad='Por Instalar' and not origen = 'WEB'");
 
 while ($row = mysql_fetch_row($ticket)){
 	 $flag=$row[10];
