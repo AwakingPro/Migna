@@ -1,7 +1,7 @@
 <?php
 include("../system/config.php");
 include("../services/config.php");
-$Sql = mysql_query("SELECT numero,id FROM TICKET numero=0 ");
+$Sql = mysql_query("SELECT numero,id FROM TICKET WHERE numero=0 ");
 $Ticket = 0;
 while($Record = mysql_fetch_array($Sql)){
     $Random = rand(100000,999999);
